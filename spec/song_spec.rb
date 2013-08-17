@@ -8,7 +8,22 @@ describe RapGenius::Song do
     RapGenius::Song.any_instance.stubs(:fetch).
       returns(File.read(File.expand_path("../support/song.html", __FILE__)))
   end
-  
+
+  describe ".find" do
+    subject { described_class.find("Tim-rogers-swag-lyrics") }
+
+    its(:url) { should eq "http://rapgenius.com/Tim-rogers-swag-lyrics"}
+
+    it "should fetch the document to get song's details" do
+      subject.expects(:fetch).once.returns(
+        File.read(File.expand_path("../support/annotation.html", __FILE__))
+      )
+      
+      subject.title
+    end
+  end
+
+
   its(:url) { should eq "http://rapgenius.com/foobar" }
   its(:title) { should eq "Control" }
   its(:artist) { should eq "Big Sean" }

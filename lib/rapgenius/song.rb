@@ -3,9 +3,14 @@ module RapGenius
   class Song
     include RapGenius::Scraper
 
+    def self.find(path)
+      self.new(path)
+    end
+
     def initialize(path)
       self.url = path
     end
+
 
     def artist
       document.css('.song_title a').text
