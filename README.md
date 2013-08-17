@@ -8,7 +8,7 @@ It's a Ruby gem for accessing lyrics and explanations on
 [RapGenius](http://rapgenius.com). 
 
 They very sadly [don't have an API](https://twitter.com/RapGenius/status/245057326321655808) so I decided to replicate one for myself
-with a nice bit of screen scraping with [Nokogiri], much like my [amex](https://github.com/timrogers/amex), [ucas](https://github.com/timrogers/ucas) and [lloydstsb](https://github.com/timrogers/lloydstsb) gems.
+with a nice bit of screen scraping with [Nokogiri](https://github.com/sparklemotion/nokogiri), much like my [amex](https://github.com/timrogers/amex), [ucas](https://github.com/timrogers/ucas) and [lloydstsb](https://github.com/timrogers/lloydstsb) gems.
 
 ## Installation
 
