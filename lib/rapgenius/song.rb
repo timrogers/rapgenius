@@ -34,7 +34,7 @@ module RapGenius
         Annotation.new(
           id: a.attr('data-id').to_s,
           song: self,
-          line: a.text
+          lyric: a.text
         )
       end
     end

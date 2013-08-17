@@ -11,17 +11,17 @@ module RapGenius
     def initialize(kwargs)
       @id = kwargs.delete(:id)
       @song = kwargs.delete(:song)
-      @line = kwargs.delete(:line)
+      @lyric = kwargs.delete(:lyric)
       self.url = @id
     end
 
     def lyric
-      @line ||= document.css('meta[property="rap_genius:referent"]').
+      @lyric ||= document.css('meta[property="rap_genius:referent"]').
         attr('content').to_s
     end
 
     def explanation
-      @content ||= document.css('meta[property="rap_genius:body"]').
+      @explanation ||= document.css('meta[property="rap_genius:body"]').
         attr('content').to_s
     end
 
