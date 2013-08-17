@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "nokogiri", "~>1.6.0"
   s.add_runtime_dependency "httparty", "~>0.11.0"
   s.add_development_dependency "rspec", "~>2.14.1"
+  s.add_development_dependency "mocha", "~>0.14.0"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
