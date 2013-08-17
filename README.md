@@ -1,11 +1,11 @@
 # rapgenius
 
-![RapGenius logo](http://f.cl.ly/items/303W0c1i2r100j2u3Y0y/Screen%20Shot%202013-08-17%20at%2016.01.19.png)
+![Rap Genius logo](http://f.cl.ly/items/303W0c1i2r100j2u3Y0y/Screen%20Shot%202013-08-17%20at%2016.01.19.png)
 
 ## What does this do?
 
 It's a Ruby gem for accessing lyrics and explanations on
-[RapGenius](http://rapgenius.com). 
+[Rap Genius](http://rapgenius.com). 
 
 They very sadly [don't have an API](https://twitter.com/RapGenius/status/245057326321655808) so I decided to replicate one for myself
 with a nice bit of screen scraping with [Nokogiri](https://github.com/sparklemotion/nokogiri), much like my [amex](https://github.com/timrogers/amex), [ucas](https://github.com/timrogers/ucas) and [lloydstsb](https://github.com/timrogers/lloydstsb) gems.
@@ -19,7 +19,7 @@ Gemfile:
 
 ## Usage
 
-Songs on RapGenius don't have numeric identifiers as far as I can tell - they're identified by a URL slug featuring the artist and song name, for instance "Big-sean-control-lyrics". We use this to fetch a particular track, like so:
+Songs on Rap Genius don't have numeric identifiers as far as I can tell - they're identified by a URL slug featuring the artist and song name, for instance "Big-sean-control-lyrics". We use this to fetch a particular track, like so:
 
 ```ruby
 require 'rapgenius'
@@ -82,7 +82,7 @@ annotation == annotations2
 There are a few things I'd love to see added to this gem:
 
 * __Searching__ - having to know the path to a particular track's lyrics isn't super intuitive
-* __Support for *\*Genius*__ - RapGenius also have other sites on subdomains like [NewsGenius](http://news.rapgenius.com) and [PoetryGenius](http://poetry.rapgenius.com). These could very easily be supported, since theyre identical in terms of markup.
+* __Support for *\*Genius*__ - RapG enius also have other sites on subdomains like [News Genius](http://news.rapgenius.com) and [Poetry Genius](http://poetry.rapgenius.com). These could very easily be supported, since theyre identical in terms of markup.
 
 This gem is open source, so feel free to add anything you want, then make a pull request. A few quick tips:
 
