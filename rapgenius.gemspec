@@ -14,10 +14,12 @@ Gem::Specification.new do |s|
     "working at Rap Genius is the API". With this magical screen-scraping gem,
     you can access the wealth of data on the internet Talmud in Ruby.}
 
-  s.add_runtime_dependency "nokogiri", "~>1.6.0"
-  s.add_runtime_dependency "httparty", "~>0.11.0"
-  s.add_development_dependency "rspec", "~>2.14.1"
-  s.add_development_dependency "mocha", "~>0.14.0"
+  s.add_runtime_dependency "nokogiri",    "~>1.6.0"
+  s.add_runtime_dependency "httparty",    "~>0.11.0"
+  s.add_development_dependency "rspec",   "~>2.14.1"
+  s.add_development_dependency "mocha",   "~>0.14.0"
+  s.add_development_dependency "webmock", "~>1.13.0"
+  s.add_development_dependency "vcr",     "~>2.5.0"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
