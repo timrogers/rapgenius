@@ -8,7 +8,7 @@ describe RapGenius::Annotation do
   before do
     RapGenius::Annotation.any_instance.stubs(:fetch).
       returns(
-        File.read(File.expand_path("../support/annotation.html", __FILE__))
+        File.read(File.expand_path("../../support/annotation.html", __FILE__))
       )
   end
 
@@ -19,7 +19,7 @@ describe RapGenius::Annotation do
 
     it "should fetch the document to get annotation details" do
       subject.expects(:fetch).once.returns(
-        File.read(File.expand_path("../support/annotation.html", __FILE__))
+        File.read(File.expand_path("../../support/annotation.html", __FILE__))
       )
       
       subject.explanation
@@ -33,7 +33,7 @@ describe RapGenius::Annotation do
     subject { annotation.lyric }
     it "only calls fetch the first time" do
       annotation.expects(:fetch).once.returns(
-        File.read(File.expand_path("../support/annotation.html", __FILE__))
+        File.read(File.expand_path("../../support/annotation.html", __FILE__))
       )
 
       2.times { annotation.lyric }
@@ -46,7 +46,7 @@ describe RapGenius::Annotation do
     subject { annotation.explanation }
     it "only calls fetch the first time" do
       annotation.expects(:fetch).once.returns(
-        File.read(File.expand_path("../support/annotation.html", __FILE__))
+        File.read(File.expand_path("../../support/annotation.html", __FILE__))
       )
 
       2.times { annotation.explanation }

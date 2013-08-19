@@ -6,7 +6,7 @@ describe RapGenius::Song do
 
   before do
     RapGenius::Song.any_instance.stubs(:fetch).
-      returns(File.read(File.expand_path("../support/song.html", __FILE__)))
+      returns(File.read(File.expand_path("../../support/song.html", __FILE__)))
   end
 
   describe ".find" do
@@ -16,7 +16,7 @@ describe RapGenius::Song do
 
     it "should fetch the document to get song's details" do
       subject.expects(:fetch).once.returns(
-        File.read(File.expand_path("../support/annotation.html", __FILE__))
+        File.read(File.expand_path("../../support/annotation.html", __FILE__))
       )
       
       subject.title
