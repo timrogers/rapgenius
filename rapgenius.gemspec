@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency "httparty",    "~>0.11.0"
   s.add_development_dependency "rspec",   "~>2.14.1"
   s.add_development_dependency "mocha",   "~>0.14.0"
-  s.add_development_dependency "webmock", "~>1.13.0"
+  s.add_development_dependency "webmock", "~>1.11.0"
   s.add_development_dependency "vcr",     "~>2.5.0"
 
   s.files         = `git ls-files`.split("\n")
