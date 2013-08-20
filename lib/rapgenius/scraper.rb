@@ -9,8 +9,8 @@ module RapGenius
 
 
     def url=(url)
-      if !(url =~ /^https?:\/\//)
-        @url = "#{BASE_URL}#{url}" 
+      unless url =~ /^https?:\/\//
+        @url = BASE_URL + url
       else
         @url = url
       end
