@@ -1,44 +1,46 @@
 require 'spec_helper'
 
-describe RapGenius::Song do
+module RapGenius
+  describe Song do
+    context "given Big Sean's Control", vcr: {cassette_name: "big-sean-control-lyrics"} do
+      subject { described_class.new("Big-sean-control-lyrics") }
 
-  subject { described_class.new("foobar") }
+      its(:url)         { should eq "http://rapgenius.com/Big-sean-control-lyrics" }
+      its(:title)       { should eq "Control" }
+      its(:artist)      { should eq "Big Sean" }
+      its(:description) { should include "blew up the Internet" }
+      its(:full_artist) { should include "(Ft. Jay Electronica & Kendrick Lamar)"}
 
-  before do
-    RapGenius::Song.any_instance.stubs(:fetch).
-      returns(File.read(File.expand_path("../../support/song.html", __FILE__)))
-  end
+      describe "#images" do
+        it "should be an Array" do
+          subject.images.should be_an Array
+        end
 
-  describe ".find" do
-    subject { described_class.find("Tim-rogers-swag-lyrics") }
+        it "should include Big Sean's picture" do
+          subject.images.should include "http://s3.amazonaws.com/rapgenius/1375029260_Big%20Sean.png"
+        end
+      end
 
-    its(:url) { should eq "http://rapgenius.com/Tim-rogers-swag-lyrics"}
+      describe "#annotations" do
+        it "should be an Array of Annotation objects" do
+          subject.annotations.should be_an Array
+          subject.annotations.first.should be_a Annotation
+        end
 
-    it "should fetch the document to get song's details" do
-      subject.expects(:fetch).once.returns(
-        File.read(File.expand_path("../../support/annotation.html", __FILE__))
-      )
-      
-      subject.title
+        it "should be of a valid length" do
+          # Annotations get added and removed from the live site; we want our
+          # count to be somewhat accurate, within reason.
+          subject.annotations.length.should be_within(15).of(130)
+        end
+      end
+    end
+
+    describe '.find' do
+      it "returns a new instance at the specified path" do
+        i = described_class.find("foobar")
+        i.should be_a Song
+        i.url.should eq 'http://rapgenius.com/foobar'
+      end
     end
   end
-
-
-  its(:url) { should eq "http://rapgenius.com/foobar" }
-  its(:title) { should eq "Control" }
-  its(:artist) { should eq "Big Sean" }
-  its(:description) { should include "blew up the Internet" }
-  its(:images) { should be_a Array }
-
-  its(:images) do
-    should include(
-      "http://s3.amazonaws.com/rapgenius/1375029260_Big%20Sean.png"
-    )
-  end
-
-  its(:full_artist) { should include "(Ft. Jay Electronica & Kendrick Lamar)"}
-  its(:annotations) { should be_a Array }
-  its("annotations.length") { should eq 132 }
-  its("annotations.first") { should be_a RapGenius::Annotation }
-
 end
