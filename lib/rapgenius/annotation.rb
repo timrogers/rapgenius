@@ -26,11 +26,12 @@ module RapGenius
     end
 
     def song
-      entry_path = document.css('meta[property="rap_genius:song"]').
-        attr('content').to_s
-
-      @song ||= Song.new(entry_path)
+      @song ||= Song.new(song_url)
     end
 
+    def song_url
+      @song_url ||= document.css('meta[property="rap_genius:song"]').
+        attr('content').to_s
+    end
   end
 end
