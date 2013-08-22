@@ -11,7 +11,6 @@ module RapGenius
       self.url = path
     end
 
-
     def artist
       document.css('.song_title a').text
     end
@@ -43,7 +42,5 @@ module RapGenius
         )
       end
     end
-
-
   end
 end
