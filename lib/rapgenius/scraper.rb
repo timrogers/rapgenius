@@ -24,6 +24,31 @@ module RapGenius
       parser   NokogiriParser
       base_uri 'http://rapgenius.com'
       headers  'User-Agent' => "rapgenius.rb v#{RapGenius::VERSION}"
+
+      # Perform a search
+      #
+      # query - Query string
+      #
+      # Note: Currently only supports Song searching
+      #
+      # Returns a non-parsed (i.e., plaintext) response body
+      def self.search(query)
+        response = get("/search/quick", query: {q: query}, headers: default_search_headers)
+        response.body
+      end
+
+      private
+
+      # Default headers for a search request
+      #
+      # Tells RapGenius we only want Javascript so we get plaintext results back.
+      def self.default_search_headers
+        {
+          'X-Requested-With' => 'XMLHttpRequest',
+          'Referer'          => base_uri,
+          'Accept'           => 'application/x-javascript,text/javascript'
+        }
+      end
     end
 
     BASE_URL = Client.base_uri + "/".freeze
@@ -32,7 +57,7 @@ module RapGenius
 
     def url=(url)
       unless url =~ /^https?:\/\//
-        @url = BASE_URL + url
+        @url = BASE_URL + url.gsub(/^\//, '')
       else
         @url = url
       end

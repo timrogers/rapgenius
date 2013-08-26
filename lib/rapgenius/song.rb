@@ -7,16 +7,35 @@ module RapGenius
       self.new(path)
     end
 
-    def initialize(path)
+    # Search for a song
+    #
+    # query - Song to search for
+    #
+    # Returns an Array of Song objects.
+    def self.search(query)
+      results = Client.search(query)
+
+      results.split("\n").map do |song|
+        info, link, id = song.split('|')
+        artist, title  = info.force_encoding('UTF-8').split(' – ')
+
+        new(link, artist: artist, title: title)
+      end
+    end
+
+    def initialize(path, kwargs = {})
       self.url = path
+
+      @artist = kwargs.delete(:artist)
+      @title  = kwargs.delete(:title)
     end
 
     def artist
-      document.css('.song_title a').text
+      @artist ||= document.css('.song_title a').text
     end
 
     def title
-      document.css('.edit_song_description i').text
+      @title ||= document.css('.edit_song_description i').text
     end
 
     def description
