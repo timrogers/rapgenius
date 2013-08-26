@@ -77,11 +77,42 @@ annotation == annotations2
 # => true
 ```
 
+You can search for songs by artist and/or title.
+
+```ruby
+results = RapGenius::Song.search("Big Sean Control")
+# => [#<RapGenius::Song:0x007fbe4b9195e0
+#  @artist="Big Sean (Ft. Jay Electronica & Kendrick Lamar)",
+#  @title="Control",
+#  @url="http://rapgenius.com/Big-sean-control-lyrics">,
+# #<RapGenius::Song:0x007fbe4b920f70
+#  @artist="Big Sean (Ft. Jay Electronica & Kendrick Lamar)",
+#  @title="Control (French Version)",
+#  @url="http://rapgenius.com/Big-sean-control-french-version-lyrics">,
+# #<RapGenius::Song:0x007fbe4b920958
+#  @artist="Big Sean (Ft. Crobar, Jay Electronica & Kendrick Lamar)",
+#  @title="Control (Remix) [Kendrick Diss]",
+#  @url="http://rapgenius.com/Big-sean-control-remix-kendrick-diss-lyrics">,
+# #<RapGenius::Song:0x007fbe4b920250
+#  @artist=
+#   "Sa-roc (Ft. Big Sean - No I.D., Jay Electronica, Kendrick Lamar & Sa-roc)",
+#  @title="CONTROL",
+#  @url="http://rapgenius.com/Sa-roc-control-lyrics">,
+# #<RapGenius::Song:0x007fbe4b91ff30
+#  @artist="C3",
+#  @title=
+#   "Control ( Disses Kendrick Lamar , Jay-Z, Tyler The Creator, Big Sean, Meek Mill & More )",
+#  @url=
+#   "http://rapgenius.com/C3-control-disses-kendrick-lamar-jay-z-tyler-the-creator-big-sean-meek-mill-and-more-lyrics">]
+
+results[0].description
+# => "The non-album cut from Sean that basically blew up the Internet due to a world-beating verse by Kendrick Lamar...
+```
+
 ## Contributing
 
 There are a few things I'd love to see added to this gem:
 
-* __Searching__ - having to know the path to a particular track's lyrics isn't super intuitive
 * __Support for *\*Genius*__ - RapG enius also have other sites on subdomains like [News Genius](http://news.rapgenius.com) and [Poetry Genius](http://poetry.rapgenius.com). These could very easily be supported, since theyre identical in terms of markup.
 
 This gem is open source, so feel free to add anything you want, then make a pull request. A few quick tips:
