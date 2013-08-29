@@ -15,7 +15,7 @@ with a nice bit of screen scraping with [Nokogiri](https://github.com/sparklemot
 Install the gem, and you're ready to go. Simply add the following to your
 Gemfile:
 
-`gem "rapgenius", "~> 0.0.2"`
+`gem "rapgenius", "~> 0.1.0"`
 
 ## Usage
 
@@ -111,11 +111,11 @@ results[0].description
 
 ## Contributing
 
-There are a few things I'd love to see added to this gem:
+After the last few contributions, there's one core thing I'd like to add to the gem:
 
-* __Support for *\*Genius*__ - RapG enius also have other sites on subdomains like [News Genius](http://news.rapgenius.com) and [Poetry Genius](http://poetry.rapgenius.com). These could very easily be supported, since theyre identical in terms of markup.
+* __Support for *\*Genius*__ - Rap Genius also have other sites on subdomains like [News Genius](http://news.rapgenius.com) and [Poetry Genius](http://poetry.rapgenius.com). These could very easily be supported, since theyre identical in terms of markup.
 
-This gem is open source, so feel free to add anything you want, then make a pull request. A few quick tips:
+If you'd like to contribute anything else, go ahead or better still, make an issue and we can talk it over and spec it out! A few quick tips:
 
 * Don't update the version numbers before your pull request - I'll sort that part out for you!
 * Make sure you write specs, then run them with `$ bundle exec rake`
@@ -123,4 +123,6 @@ This gem is open source, so feel free to add anything you want, then make a pull
 
 ## Get in touch
 
-Any questions, thoughts or comments? Email me at <me@timrogers.co.uk>.
+[timrogers](https://github.com/timrogers) and [tsigo](https://github.com/tsigo) are the gem's primary contributors.
+
+Any questions, thoughts or comments? Email me at <me+rapgenius@timrogers.co.uk> or create an issue.

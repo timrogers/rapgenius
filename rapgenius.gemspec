@@ -6,9 +6,9 @@ Gem::Specification.new do |s|
   s.name        = "rapgenius"
   s.version     = RapGenius::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Tim Rogers"]
-  s.email       = ["me@timrogers.co.uk"]
-  s.homepage    = "http://timrogers.co.uk"
+  s.authors     = ["Tim Rogers", "Robert Speicher"]
+  s.email       = ["me+rapgenius@timrogers.co.uk", "rspeicher@gmail.com"]
+  s.homepage    = "https://github.com/timrogers/rapgenius"
   s.summary     = %q{A gem for accessing lyrics and explanations on RapGenius.com}
   s.description = %q{Up until until now, to quote RapGenius themselves,
     "working at Rap Genius is the API". With this magical screen-scraping gem,

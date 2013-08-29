@@ -12,3 +12,7 @@ __v0.0.3__ (22nd August 2013, *contributed by [tsigo](https://github.com/tsigo)*
 
 * Improves implementation of HTTParty
 * Reorganises specs to use VCR
+
+__v0.1.0__ (29th August 2013, *contributed by [tsigo](https://github.com/tsigo)*)
+
+* Adds support for searching for songs with `RapGenius::Song.search("Song, artist name or other query")`
