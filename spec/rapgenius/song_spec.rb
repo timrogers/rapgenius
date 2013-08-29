@@ -42,5 +42,22 @@ module RapGenius
         i.url.should eq 'http://rapgenius.com/foobar'
       end
     end
+
+    describe '.search', vcr: {cassette_name: 'song-search-big-sean-control'} do
+      let(:results) { described_class.search('Big Sean Control') }
+
+      it "returns an Array of Songs" do
+        results.should be_an Array
+        results.first.should be_a Song
+      end
+
+      describe 'assigned attributes' do
+        subject { results.first }
+
+        its(:url)    { should eq "http://rapgenius.com/Big-sean-control-lyrics" }
+        its(:artist) { should eq "Big Sean (Ft. Jay Electronica & Kendrick Lamar)" }
+        its(:title)  { should eq "Control" }
+      end
+    end
   end
 end

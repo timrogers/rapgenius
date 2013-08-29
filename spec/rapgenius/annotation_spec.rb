@@ -13,7 +13,7 @@ module RapGenius
 
     describe "#lyric" do
       it "should have the correct lyric" do
-        annotation.lyric.should eq "You gon' get this rain like it's May weather,"
+        annotation.lyric.should match "You gon' get this rain like it's May weather"
       end
     end
 
