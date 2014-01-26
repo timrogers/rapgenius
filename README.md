@@ -121,6 +121,10 @@ If you'd like to contribute anything else, go ahead or better still, make an iss
 * Make sure you write specs, then run them with `$ bundle exec rake`
 * Update this README.md file so I, and users, know how your changes work
 
+## Copyright
+
+Copyright (c) 2013 Tim Rogers. See LICENSE for details.
+
 ## Get in touch
 
 [timrogers](https://github.com/timrogers) and [tsigo](https://github.com/tsigo) are the gem's primary contributors.
