@@ -1,2 +1,4 @@
 Gemfile.lock
 spec/support/cassettes
+.bundle/
+pkg/
