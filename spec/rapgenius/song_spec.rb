@@ -2,61 +2,63 @@ require 'spec_helper'
 
 module RapGenius
   describe Song do
-    context "given Big Sean's Control", vcr: {cassette_name: "big-sean-control-lyrics"} do
-      subject { described_class.new("Big-sean-control-lyrics") }
+    context "given Migos's Versace", vcr: { cassette_name: "song-176872" } do
+      subject(:song) { described_class.find(176872) }
 
-      its(:url)         { should eq "http://rapgenius.com/Big-sean-control-lyrics" }
-      its(:title)       { should eq "Control" }
-      its(:artist)      { should eq "Big Sean" }
-      its(:description) { should include "blew up the Internet" }
-      its(:full_artist) { should include "(Ft. Jay Electronica & Kendrick Lamar)"}
+      its(:url) { should eq "http://rapgenius.com/Migos-versace-lyrics" }
+      its(:title) { should eq "Versace" }
+  
+      its(:description) { should include "they absolutely killed it" }
 
-      describe "#images" do
-        it "should be an Array" do
-          subject.images.should be_an Array
-        end
-
-        it "should include Big Sean's picture" do
-          subject.images.should include "http://s3.amazonaws.com/rapgenius/1375029260_Big%20Sean.png"
-        end
+      context "#artist" do
+        subject { song.artist }
+        it { should be_a Artist }
+        its(:name) { should eq "Migos" }
       end
 
-      describe "#annotations" do
-        it "should be an Array of Annotation objects" do
-          subject.annotations.should be_an Array
-          subject.annotations.first.should be_a Annotation
+      context "#featured_artists" do
+        subject { song.featured_artists }
+        its(:length) { should eq 1 }
+        its("first.name") { should eq "Drake" }
+        its(:first) { should be_a Artist }
+      end
+
+      context "#producer_artists" do
+        subject { song.producer_artists }
+        its(:length) { should eq 1 }
+        its("first.name") { should eq "Zaytoven" }
+        its(:first) { should be_a Artist }
+      end
+
+      context "#media" do
+        subject { song.media }
+        its(:length) { should eq 2 }
+        its(:first) { should be_a Media }
+        its("first.provider") { should eq "soundcloud" }
+      end
+
+      context "#lines" do
+        subject { song.lines }
+        its(:count) { should eq 81 }
+        its(:first) { should be_a Line }
+        its("first.id") { should eq "1983907" }
+        its("first.lyric") { should eq "[Verse 1: Drake]" }
+        its("first.explanations.first") { should include "Versace used his verse in this runway show" }
+      end
+
+      its(:images) { should include "http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif" }
+      its(:pyongs) { should eq 22 }
+      its(:hot?) { should eq false }
+      its(:views) { should eq 1834811 }
+      its(:concurrent_viewers) { should eq 9 }
+    
+
+      context "a non-existent song ID" do
+        subject(:song) { described_class.find("bahahaha") }
+
+        it "raises an exception" do
+          expect { song }.to raise_exception
         end
-
-        it "should be of a valid length" do
-          # Annotations get added and removed from the live site; we want our
-          # count to be somewhat accurate, within reason.
-          subject.annotations.length.should be_within(15).of(130)
-        end
-      end
-    end
-
-    describe '.find' do
-      it "returns a new instance at the specified path" do
-        i = described_class.find("foobar")
-        i.should be_a Song
-        i.url.should eq 'http://rapgenius.com/foobar'
-      end
-    end
-
-    describe '.search', vcr: {cassette_name: 'song-search-big-sean-control'} do
-      let(:results) { described_class.search('Big Sean Control') }
-
-      it "returns an Array of Songs" do
-        results.should be_an Array
-        results.first.should be_a Song
-      end
-
-      describe 'assigned attributes' do
-        subject { results.first }
-
-        its(:url)    { should eq "http://rapgenius.com/Big-sean-control-lyrics" }
-        its(:artist) { should eq "Big Sean (Ft. Jay Electronica & Kendrick Lamar)" }
-        its(:title)  { should eq "Control" }
       end
     end
   end

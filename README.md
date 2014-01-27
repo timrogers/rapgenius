@@ -1,132 +1,149 @@
-# rapgenius
+# rapgenius.rb
 
 ![Rap Genius logo](http://f.cl.ly/items/303W0c1i2r100j2u3Y0y/Screen%20Shot%202013-08-17%20at%2016.01.19.png)
 
 ## What does this do?
 
-It's a Ruby gem for accessing lyrics and explanations on
-[Rap Genius](http://rapgenius.com). 
+It's a Ruby gem for accessing lyrics, artists and explanations on
+[Rap Genius](http://rapgenius.com).
 
-They very sadly [don't have an API](https://twitter.com/RapGenius/status/245057326321655808) so I decided to replicate one for myself
-with a nice bit of screen scraping with [Nokogiri](https://github.com/sparklemotion/nokogiri), much like my [amex](https://github.com/timrogers/amex), [ucas](https://github.com/timrogers/ucas) and [lloydstsb](https://github.com/timrogers/lloydstsb) gems.
+In pre-1.0.0 versions, this gem used Nokogiri to scrape Rap Genius's pages,
+but no more. The new [Genius iOS app](http://rapgenius.com/static/app) uses
+a private API, which this gem makes use of.
 
 ## Installation
 
 Install the gem, and you're ready to go. Simply add the following to your
 Gemfile:
 
-`gem "rapgenius", "~> 0.1.0"`
+`gem "rapgenius", "~> 1.0.0"`
 
 ## Usage
 
-Songs on Rap Genius don't have numeric identifiers as far as I can tell - they're identified by a URL slug featuring the artist and song name, for instance "Big-sean-control-lyrics". We use this to fetch a particular track, like so:
+__The best way to get a decent idea of the attributes available on `Song` and
+the other objects is by looking through the files in `lib/rapgenius`.__
+
+### Searching
+
+You can search for songs by various fields. All of these
+methods return an array of `Song` objects...:
+
+```ruby
+RapGenius.search("Versace")
+RapGenius.search_by_title("Versace")
+RapGenius.search_by_artist("Migos")
+RapGenius.search_by_lyrics("medusa")
+```
+
+If more than 20 results are returned, you won't be able to get access to
+records beyond the 20th. There doesn't appear to be any pagination support
+in the API.
+
+### Songs
+
+Songs on Rap Genius have unique identifiers. They're not especially
+easy to find, but if you hover over the "pyong" button near the top of the page,
+you'll see the song's ID in the URL. Once you have an ID, you can load a
+song via the API:
 
 ```ruby
 require 'rapgenius'
-song = RapGenius::Song.find("Big-sean-control-lyrics")
+
+song = RapGenius::Song.find(176872)
+song.title # => "Versace"
+song.artists.map(&:name) # => ["Migos", "Drake", "Zaytoven"]
 ```
 
-Once you've got the song, you can easily load details about it. This uses
-Nokogiri to fetch the song's page and then parse it:
+Once you've found the song you're seeking, there's plenty of other useful
+details you can access:
 
 ```ruby
 song.title
-# => "Control"
+# => "Versace"
 
-song.artist
-# => "Big Sean"
+song.url
+# => "http://rapgenius.com/Migos-versace-lyrics""
 
-song.full_artist
-# => "Big Sean (Ft. Jay Electronica & Kendrick Lamar)"
-
-song.images
-# => ["http://s3.amazonaws.com/rapgenius/1376434983_jay-electronica.jpg", "http://s3.amazonaws.com/rapgenius/1375029260_Big%20Sean.png", "http://s3.amazonaws.com/rapgenius/Kendrick-Lamar-1024x680.jpg"]
+song.pyongs
+# => 22
 
 song.description
-# => "The non-album cut from Sean that basically blew up the Internet due to a world-beating verse by Kendrick Lamar...
-```
+# => "Released in June 2013, not only did they take the beat from Soulja Boy’s OMG part 2 but they absolutely killed it."
 
-The `#annotations` accessor on a Song returns an array of RapGenius::Annotation
-objects corresponding to different annotated lines of the song, identified by
-their `id`.
 
-You can look these up manually using `RapGenius::Annotation.find("id")`. You
-can grab the ID for a lyric from a RapGenius page by right clicking on an annotation, copying the shortcut and then finding the number after "http://rapgenius.com".
+### Lines
+
+Once you've got a song, you can then go through its "lines", which includes
+annotated and unannotated parts of the content.
 
 ```ruby
-song.annotations
-# => [<RapGenius::Annotation>, <RapGenius::Annotation>...]
+line = song.lines[1]
 
-annotation = song.annotations[99]
+line.lyric
+# => Versace, Versace, Medusa head on me like I'm 'luminati
 
-annotation.lyric
-# => "And that goes for Jermaine Cole, Big KRIT, Wale\nPusha T, Meek Millz, A$AP Rocky, Drake\nBig Sean, Jay Electron', Tyler, Mac Miller"
+line.annotations
+# => ["Read about how this collaboration came to pass here..."]
 
-annotation.explanation
-# => "Kendrick calls out some of the biggest names in present day Hip-hop...""
-
-annotation.song == song # You can get back to the song from the annotation...
-# => true
-
-annotation.id
-# => "2093001"
-
-annotation2 = RapGenius::Annotation.find("2093001") # Fetching directly...
-
-annotation == annotations2
-# => true
+line.song
+# => #<RapGenius::Song:0x007fccdba50a50 @id=176872...
 ```
 
-You can search for songs by artist and/or title.
+### Media
+
+Rap Genius provides great access to media like MP3s on Soundcloud or videos
+on YouTube direct from songs.
 
 ```ruby
-results = RapGenius::Song.search("Big Sean Control")
-# => [#<RapGenius::Song:0x007fbe4b9195e0
-#  @artist="Big Sean (Ft. Jay Electronica & Kendrick Lamar)",
-#  @title="Control",
-#  @url="http://rapgenius.com/Big-sean-control-lyrics">,
-# #<RapGenius::Song:0x007fbe4b920f70
-#  @artist="Big Sean (Ft. Jay Electronica & Kendrick Lamar)",
-#  @title="Control (French Version)",
-#  @url="http://rapgenius.com/Big-sean-control-french-version-lyrics">,
-# #<RapGenius::Song:0x007fbe4b920958
-#  @artist="Big Sean (Ft. Crobar, Jay Electronica & Kendrick Lamar)",
-#  @title="Control (Remix) [Kendrick Diss]",
-#  @url="http://rapgenius.com/Big-sean-control-remix-kendrick-diss-lyrics">,
-# #<RapGenius::Song:0x007fbe4b920250
-#  @artist=
-#   "Sa-roc (Ft. Big Sean - No I.D., Jay Electronica, Kendrick Lamar & Sa-roc)",
-#  @title="CONTROL",
-#  @url="http://rapgenius.com/Sa-roc-control-lyrics">,
-# #<RapGenius::Song:0x007fbe4b91ff30
-#  @artist="C3",
-#  @title=
-#   "Control ( Disses Kendrick Lamar , Jay-Z, Tyler The Creator, Big Sean, Meek Mill & More )",
-#  @url=
-#   "http://rapgenius.com/C3-control-disses-kendrick-lamar-jay-z-tyler-the-creator-big-sean-meek-mill-and-more-lyrics">]
+media = song.media.first
 
-results[0].description
-# => "The non-album cut from Sean that basically blew up the Internet due to a world-beating verse by Kendrick Lamar...
+media.type
+# => "audio"
+
+media.provider
+# => "soundcloud"
+
+media.url
+# => "https://soundcloud.com/mixtapemechaniks/migos-ft-drake-versace-remix"
 ```
+
+### Artist
+
+You can navigate from a song to its artist, and then to other songs by that
+artist. Magic, huh?!
+
+```ruby
+artist = song.artist # or song.artists, song.featured_artists or song.producer_artists
+
+artist.name
+# => "Migos"
+
+artist.type
+# => :primary
+
+artist.url
+# => "http://rapgenius.com/artists/Migos"
+
+artist.description
+# => "Migos are an American hip-hop group from Atlanta, Georgia..."
+
+artist.songs
+# => [#<RapGenius::Song:0x007fccdb884398...]
 
 ## Contributing
 
-After the last few contributions, there's one core thing I'd like to add to the gem:
-
-* __Support for *\*Genius*__ - Rap Genius also have other sites on subdomains like [News Genius](http://news.rapgenius.com) and [Poetry Genius](http://poetry.rapgenius.com). These could very easily be supported, since theyre identical in terms of markup.
-
 If you'd like to contribute anything else, go ahead or better still, make an issue and we can talk it over and spec it out! A few quick tips:
 
-* Don't update the version numbers before your pull request - I'll sort that part out for you!
+* Don't update the version numbers before your pull request - I'll sort that part out for you.
 * Make sure you write specs, then run them with `$ bundle exec rake`
 * Update this README.md file so I, and users, know how your changes work
 
 ## Copyright
 
-Copyright (c) 2013 Tim Rogers. See LICENSE for details.
+Copyright (c) 2013-2014 Tim Rogers. See LICENSE for details.
 
 ## Get in touch
 
 [timrogers](https://github.com/timrogers) and [tsigo](https://github.com/tsigo) are the gem's primary contributors.
 
-Any questions, thoughts or comments? Email me at <me+rapgenius@timrogers.co.uk> or create an issue.
+Any questions, thoughts or comments? Email me at <me@timrogers.co.uk> or create an issue.

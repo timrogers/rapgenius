@@ -1,4 +1,4 @@
 module RapGenius
-  class ScraperError < StandardError
+  class Error < StandardError
   end
 end
