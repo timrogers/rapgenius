@@ -69,6 +69,7 @@ song.pyongs
 
 song.description
 # => "Released in June 2013, not only did they take the beat from Soulja Boy’s OMG part 2 but they absolutely killed it."
+```
 
 
 ### Lines
@@ -129,6 +130,7 @@ artist.description
 
 artist.songs
 # => [#<RapGenius::Song:0x007fccdb884398...]
+```
 
 ## Contributing
 
