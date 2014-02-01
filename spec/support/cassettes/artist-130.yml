@@ -78,7 +78,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 01 Feb 2014 22:01:53 GMT
+      - Sat, 01 Feb 2014 22:05:04 GMT
       Etag:
       - '"f1b4a295d5d198ed2cdbaa73b7ec3bce"'
       Server:
@@ -86,7 +86,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Runtime:
-      - '30'
+      - '28'
       Content-Length:
       - '9057'
       Connection:
@@ -117,7 +117,7 @@ http_interactions:
         Riddance (Aristo Diss)","updated_by_human_at":1389119873,"stats":{"pageviews":14827,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":51974},{"annotation_count":8,"verified_annotation_count":0,"title":"Bitch
         Is Crazy","updated_by_human_at":1372025575,"stats":{"pageviews":12161,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":18051}]},"meta":{"status":200}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:02:06 GMT
+  recorded_at: Sat, 01 Feb 2014 22:05:17 GMT
 - request:
     method: get
     uri: https://api.rapgenius.com/artists/130
@@ -137,7 +137,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 01 Feb 2014 22:01:56 GMT
+      - Sat, 01 Feb 2014 22:05:07 GMT
       Etag:
       - '"2677ffefc8fdd2c0efa9fbf1e2b70c2b"'
       Server:
@@ -145,7 +145,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Runtime:
-      - '8'
+      - '9'
       Content-Length:
       - '2620'
       Connection:
@@ -172,7 +172,7 @@ http_interactions:
         the album. His third project ",{"tag":"em","children":[{"tag":"a","attributes":{"href":"http://rapgenius.com/albums/Drake/Nothing-was-the-same"},"children":["Nothing
         Was The Same"]}]}," was released September 24th, 2013."]}]}},"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","user":null,"url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130}},"meta":{"status":200}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:02:08 GMT
+  recorded_at: Sat, 01 Feb 2014 22:05:20 GMT
 - request:
     method: get
     uri: https://api.rapgenius.com/artists/130/songs/?page=3
@@ -192,7 +192,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 01 Feb 2014 22:01:56 GMT
+      - Sat, 01 Feb 2014 22:05:08 GMT
       Etag:
       - '"7279da41bd6d9d30263a9860e6b7d274"'
       Server:
@@ -200,7 +200,7 @@ http_interactions:
       Status:
       - 200 OK
       X-Runtime:
-      - '21'
+      - '24'
       Content-Length:
       - '8897'
       Connection:
@@ -229,7 +229,7 @@ http_interactions:
         Ones Go (Interlude)","updated_by_human_at":1383495627,"stats":{"hot":false,"pageviews":391108},"pyongs_count":3,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":12,"id":58665},{"verified_annotation_count":0,"title":"Practice","updated_by_human_at":1391189866,"stats":{"hot":false,"pageviews":431083,"concurrents":2},"pyongs_count":5,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":21,"id":58346},{"verified_annotation_count":0,"title":"Worst
         behaviour","updated_by_human_at":1389185142,"stats":{"hot":false},"pyongs_count":12,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":334106},{"verified_annotation_count":0,"title":"Versace","updated_by_human_at":1383970164,"stats":{"hot":false},"pyongs_count":1,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":257833}]},"meta":{"status":200}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:02:09 GMT
+  recorded_at: Sat, 01 Feb 2014 22:05:20 GMT
 - request:
     method: get
     uri: https://api.rapgenius.com/artists/bahahaha
@@ -249,13 +249,13 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Sat, 01 Feb 2014 22:01:57 GMT
+      - Sat, 01 Feb 2014 22:05:08 GMT
       Server:
       - nginx/1.4.1
       Status:
       - 404 Not Found
       X-Runtime:
-      - '5'
+      - '9'
       Content-Length:
       - '49'
       Connection:
@@ -264,5 +264,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"meta":{"status":404,"message":"404 Not Found"}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:02:09 GMT
+  recorded_at: Sat, 01 Feb 2014 22:05:21 GMT
 recorded_with: VCR 2.5.0

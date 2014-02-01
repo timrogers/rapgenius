@@ -130,6 +130,10 @@ artist.description
 
 artist.songs
 # => [#<RapGenius::Song:0x007fccdb884398...]
+
+# Songs for an artist load in pages of 25
+artist.songs(page: 2)
+# => [#<RapGenius::Song:0x007fccdb884398...]
 ```
 
 ## Contributing

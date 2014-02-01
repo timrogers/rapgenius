@@ -36,8 +36,13 @@ module RapGenius
       end.flatten.join("")
     end
 
-    def songs
-      @songs ||= fetch("/artists/#{@id}/songs")["response"]["songs"].map do |song|
+    # You seem to be able to load 25 songs at a time for an artist. I haven't
+    # found a way to vary the number you get back from the query, but you can
+    # paginate through in blocks of 25 songs.
+    def songs(options = {page: 1})
+      songs_url = "/artists/#{@id}/songs/?page=#{options[:page]}"
+      
+      fetch(songs_url)["response"]["songs"].map do |song|
         Song.new(
           artist: Artist.new(
             name: song["primary_artist"]["name"],

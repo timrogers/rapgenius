@@ -13,12 +13,17 @@ module RapGenius
       context "#songs" do
         subject { artist.songs }
 
-        # The iOS app only loads a certain number, and doesn't (appear to)
-        # support pagination
-        its(:count) { should eq 25}
-
+        its(:count) { should eq 25 }
         its(:last) { should be_a Song }
         its("last.title") { should eq "Bitch Is Crazy" }
+
+        context "pagination" do
+          subject { artist.songs(page: 3) }
+
+          its(:last) { should be_a Song }
+          its(:count) { should eq 25 }
+          its("last.title") { should eq "Versace" }
+        end
       end
 
       context "a non-existent artist ID" do
