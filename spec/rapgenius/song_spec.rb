@@ -32,7 +32,7 @@ module RapGenius
 
       context "#media" do
         subject { song.media }
-        its(:length) { should eq 2 }
+        its(:length) { should eq 3 }
         its(:first) { should be_a Media }
         its("first.provider") { should eq "soundcloud" }
       end
@@ -47,10 +47,10 @@ module RapGenius
       end
 
       its(:images) { should include "http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif" }
-      its(:pyongs) { should eq 22 }
+      its(:pyongs) { should eq 30 }
       its(:hot?) { should eq false }
-      its(:views) { should eq 1834811 }
-      its(:concurrent_viewers) { should eq 9 }
+      its(:views) { should eq 1843565 }
+      its(:concurrent_viewers) { should eq 8 }
     
 
       context "a non-existent song ID" do
