@@ -33,7 +33,11 @@ module RapGenius
       response = HTTPClient.get(url)
 
       if response.code != 200
-        raise RapGenius::Error, "Received a #{response.code} HTTP response"
+        if response.code == 404
+          raise RapGenius::NotFoundError
+        else
+          raise RapGenius::Error, "Received a #{response.code} HTTP response"
+        end
       end
 
       response.parsed_response
