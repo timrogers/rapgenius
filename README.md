@@ -16,7 +16,7 @@ a private API, which this gem makes use of.
 Install the gem, and you're ready to go. Simply add the following to your
 Gemfile:
 
-`gem "rapgenius", "~> 1.0.0"`
+`gem "rapgenius", "~> 1.0.2"`
 
 ## Usage
 
@@ -154,7 +154,5 @@ If you'd like to contribute anything else, go ahead or better still, make an iss
 Copyright (c) 2013-2014 Tim Rogers. See LICENSE for details.
 
 ## Get in touch
-
-[timrogers](https://github.com/timrogers) and [tsigo](https://github.com/tsigo) are the gem's primary contributors.
 
 Any questions, thoughts or comments? Email me at <me@timrogers.co.uk> or create an issue.
