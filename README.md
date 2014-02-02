@@ -136,6 +136,11 @@ artist.songs(page: 2)
 # => [#<RapGenius::Song:0x007fccdb884398...]
 ```
 
+## Examples
+
+I've built a game called "Guess The Track" using the gem - find out more, grab
+the source or play for yourself [here](https://github.com/timrogers/rapgenius/blob/master/examples/guess_the_track.md).
+
 ## Contributing
 
 If you'd like to contribute anything else, go ahead or better still, make an issue and we can talk it over and spec it out! A few quick tips:
