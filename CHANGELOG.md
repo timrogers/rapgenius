@@ -23,3 +23,12 @@ __v1.0.0__ (27th January 2014)
 [Genius iOS app](http://rapgenius.com/static/app).
 * Vastly improves quality of data available on songs and their lyrics
 * Provides access to media items and song artists
+
+__v1.0.1__ (1st February 2014)
+
+* Allows pagination through an artist's songs
+
+__v1.0.2__ (2nd February 2014)
+
+* Defines a specific `RapGenius::NotFoundError` for when requests to the API
+return a 404
