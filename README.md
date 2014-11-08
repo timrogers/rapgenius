@@ -16,7 +16,7 @@ a private API, which this gem makes use of.
 Install the gem, and you're ready to go. Simply add the following to your
 Gemfile:
 
-`gem "rapgenius", "~> 1.0.2"`
+`gem "rapgenius", "~> 1.0.3"`
 
 ## Usage
 

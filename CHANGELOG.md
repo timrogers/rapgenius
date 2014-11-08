@@ -32,3 +32,8 @@ __v1.0.2__ (2nd February 2014)
 
 * Defines a specific `RapGenius::NotFoundError` for when requests to the API
 return a 404
+
+__v1.0.3__ (8th November 2014)
+
+* Fix annotations, so they're combined into a string with a space between each
+one
