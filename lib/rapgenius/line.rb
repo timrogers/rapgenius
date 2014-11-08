@@ -42,7 +42,7 @@ module RapGenius
       @explanation ||= response["annotations"].map do |annotation|
         annotation["body"]["dom"]["children"].map do |node|
           parse_description(node)
-        end.join("")
+        end.join(" ")
       end.flatten
     end
 
