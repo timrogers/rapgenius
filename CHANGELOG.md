@@ -35,5 +35,8 @@ return a 404
 
 __v1.0.4__ (8th November 2014)
 
-* Fix annotations, so they're combined into a string with a space between each
-one
+* Fix annotations, so they're combined into a string with a space between each one
+
+__v1.0.5__ (12th January 2015)
+
+* Load descriptions as plain text, reducing code for parsing them
