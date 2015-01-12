@@ -39,11 +39,10 @@ module RapGenius
     # Annotation class, but I don't have time for now.
     def explanations
       return nil unless @id
+
       @explanation ||= response["annotations"].map do |annotation|
-        annotation["body"]["dom"]["children"].map do |node|
-          parse_description(node)
-        end.join(" ")
-      end.flatten
+        annotation["body"]["plain"]
+      end
     end
 
     alias_method :annotations, :explanations

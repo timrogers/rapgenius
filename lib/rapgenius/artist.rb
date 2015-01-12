@@ -31,17 +31,15 @@ module RapGenius
     end
 
     def description
-      @description ||= response["description"]["dom"]["children"].map do |node|
-        parse_description(node)
-      end.flatten.join("")
+      @description ||= response["description"]["plain"]
     end
 
-    # You seem to be able to load 25 songs at a time for an artist. I haven't
+    # You seem to be able to load 20 songs at a time for an artist. I haven't
     # found a way to vary the number you get back from the query, but you can
-    # paginate through in blocks of 25 songs.
+    # paginate through in blocks of 20 songs.
     def songs(options = {page: 1})
       songs_url = "/artists/#{@id}/songs/?page=#{options[:page]}"
-      
+
       fetch(songs_url)["response"]["songs"].map do |song|
         Song.new(
           artist: Artist.new(

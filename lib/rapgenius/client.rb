@@ -2,11 +2,6 @@ require 'httparty'
 
 module RapGenius
   module Client
-    # HTTParty client
-    #
-    # Sets some useful defaults for all of our requests.
-    #
-    # See Scraper#fetch
     class HTTPClient
       include HTTParty
 
@@ -16,6 +11,10 @@ module RapGenius
     end
 
     BASE_URL = HTTPClient.base_uri + "/".freeze
+    PLAIN_TEXT_FORMAT = "plain".freeze
+    DOM_TEXT_FORMAT = "dom".freeze
+
+    attr_reader :text_format
 
     def url=(url)
       unless url =~ /^https?:\/\//
@@ -30,7 +29,9 @@ module RapGenius
     end
 
     def fetch(url)
-      response = HTTPClient.get(url)
+      response = HTTPClient.get(url, query: {
+        text_format: "#{DOM_TEXT_FORMAT},#{PLAIN_TEXT_FORMAT}"
+      })
 
       if response.code != 200
         if response.code == 404
@@ -42,20 +43,5 @@ module RapGenius
 
       response.parsed_response
     end
-
-    # Descriptions are formatted in an irritating way, encapsulating the
-    # various kinds of HTML tag that can be included. This parses that
-    # into text, but some content may be lost.
-    def parse_description(node)
-      if node.is_a? String
-        node
-      elsif node.is_a? Array
-        node.map { |subnode| parse_description(subnode) }
-      elsif node.is_a? Hash
-        return unless node.key? "children"
-        parse_description(node["children"])
-      end
-    end
-
   end
 end

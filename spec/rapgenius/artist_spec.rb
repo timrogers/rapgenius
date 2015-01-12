@@ -5,24 +5,24 @@ module RapGenius
     context "given Drake", vcr: { cassette_name: "artist-130" } do
       subject(:artist) { described_class.find(130) }
 
-      its(:url) { should eq "http://rapgenius.com/artists/Drake" }
+      its(:url) { should eq "http://genius.com/artists/Drake" }
       its(:name) { should eq "Drake" }
-      its(:image) { should eq "http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif" }
+      its(:image) { should eq "http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif" }
       its(:description) { should include "Drake is part of a generation of new rappers" }
 
       context "#songs" do
         subject { artist.songs }
 
-        its(:count) { should eq 25 }
+        its(:count) { should eq 20 }
         its(:last) { should be_a Song }
-        its("last.title") { should eq "Bitch Is Crazy" }
+        its("last.title") { should eq "Amen" }
 
         context "pagination" do
           subject { artist.songs(page: 3) }
 
           its(:last) { should be_a Song }
-          its(:count) { should eq 25 }
-          its("last.title") { should eq "Versace" }
+          its(:count) { should eq 20 }
+          its("last.title") { should eq "Champion" }
         end
       end
 

@@ -2,199 +2,314 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.rapgenius.com/songs/176872
+    uri: https://api.rapgenius.com/referents/2638695?text_format=dom,plain
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - rapgenius.rb v1.0.0
+      - rapgenius.rb v1.0.4
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 01 Feb 2014 22:01:59 GMT
-      Etag:
-      - '"20acd808e0bc8a4e2f63c30632781b2a"'
-      Server:
-      - nginx/1.4.1
-      Status:
-      - 200 OK
-      X-Runtime:
-      - '827'
-      Content-Length:
-      - '19328'
       Connection:
       - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"response":{"song":{"tracking_paths":{"aggregate":"/Migos-versace-lyrics","concurrent":"/Migos-versace-lyrics"},"primary_artist":{"image_url":"http://s3.amazonaws.com/rapgenius/1372663544_tumblr_mi9wzeHbPS1s459tno1_500.jpg","url":"http://rapgenius.com/artists/Migos","name":"Migos","id":44080},"description":{"dom":{"tag":"root","children":[{"tag":"p","children":["Released
-        in June 2013, not only did they take the beat from Soulja Boy\u2019s ",{"tag":"a","attributes":{"href":"http://www.youtube.com/watch?v=x-jJilb4HLo","rel":"nofollow"},"children":["OMG
-        part 2"]}," but they absolutely killed it."]},"",{"tag":"p","children":[{"tag":"img","attributes":{"alt":"","height":500,"width":500,"src":"http://images.rapgenius.com/cc9b2e445d9dd264e9f224f7f4aefde2.500x500x1.jpg"},"data":{"thumbnail":{"width":300,"height":300,"src":"http://images.rapgenius.com/cc9b2e445d9dd264e9f224f7f4aefde2.300x300x1.jpg"},"animated":"false"}}]}]}},"title":"Versace","updated_by_human_at":1390543197,"producer_artists":[{"image_url":"http://s3.amazonaws.com/rapgenius/Zaytoven_1-7-2011.jpg","url":"http://rapgenius.com/artists/Zaytoven","name":"Zaytoven","id":27822}],"media":[{"type":"audio","url":"https://soundcloud.com/mixtapemechaniks/migos-ft-drake-versace-remix","provider":"soundcloud"},{"type":"video","url":"http://www.youtube.com/watch?v=PAYpmylJCn0","provider":"youtube"},{"type":"audio","url":"spotify:track:6xhblLundMJAiG9jF7nlxs","provider":"spotify"}],"stats":{"hot":false,"pageviews":1843565,"concurrents":8},"featured_artists":[{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130}],"url":"http://rapgenius.com/Migos-versace-lyrics","pyongs_count":30,"lyrics":{"dom":{"tag":"root","children":[{"tag":"p","children":[{"tag":"a","attributes":{"href":"/1983907/Migos-versace/Verse-1-drake","class":"has_comments"},"data":{"editorial-state":"accepted","id":"1983907"},"children":["[Verse
-        1: Drake]"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati"},"data":{"editorial-state":"accepted","id":"2638695"},"children":["Versace,
-        Versace, Medusa head on me like I''m ''luminati"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896313/Migos-versace/This-is-a-gated-community-please-get-the-fuck-off-the-property"},"data":{"editorial-state":"accepted","id":"1896313"},"children":["This
-        is a gated community, please get the fuck off the property"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1899445/Migos-versace/Rap-must-be-changin-cause-im-at-the-top-and-aint-no-one-on-top-of-me"},"data":{"editorial-state":"accepted","id":"1899445"},"children":["Rap
-        must be changin'' cause I''m at the top and ain''t no one on top of me"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896335/Migos-versace/Niggas-be-wantin-a-verse-for-a-verse-but-man-thats-not-a-swap-to-me"},"data":{"editorial-state":"accepted","id":"1896335"},"children":["Niggas
-        be wantin'' a verse for a verse, but man that''s not a swap to me"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896339/Migos-versace/Drownin-in-compliments-pool-in-the-backyard-that-look-like-metropolis"},"data":{"editorial-state":"accepted","id":"1896339"},"children":["Drownin''
-        in compliments, pool in the backyard that look like Metropolis"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896350/Migos-versace/I-think-im-sellin-a-million-first-week-man-i-guess-im-a-optimist"},"data":{"editorial-state":"accepted","id":"1896350"},"children":["I
-        think I''m sellin'' a million first week, man I guess I''m a optimist"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896354/Migos-versace/Born-in-toronto-but-sometimes-i-feel-like-atlanta-adopted-us"},"data":{"editorial-state":"accepted","id":"1896354"},"children":["Born
-        in Toronto but sometimes I feel like Atlanta adopted us"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896592/Migos-versace/What-the-fuck-is-you-talkin-bout-saw-this-shit-comin-like-i-had-binoculars"},"data":{"editorial-state":"accepted","id":"1896592"},"children":["What
-        the fuck is you talkin'' ''bout? Saw this shit comin'' like I had binoculars"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1898529/Migos-versace/Boy-versace-versace"},"data":{"editorial-state":"accepted","id":"1898529"},"children":["Boy,
-        Versace, Versace,"]}," ",{"tag":"a","attributes":{"href":"/1897411/Migos-versace/We-stay-at-the-mansion-when-we-in-miami"},"data":{"editorial-state":"accepted","id":"1897411"},"children":["we
-        stay at the mansion when we in Miami"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1898530/Migos-versace/The-pillows-versace-the-sheets-are-versace"},"data":{"editorial-state":"accepted","id":"1898530"},"children":["The
-        pillows'' Versace, the sheets are Versace,"]}," ",{"tag":"a","attributes":{"href":"/1896616/Migos-versace/I-just-won-a-grammy"},"data":{"editorial-state":"accepted","id":"1896616"},"children":["I
-        just won a Grammy"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1900474/Migos-versace/Ive-been-so-quiet-i-got-the-world-like-what-the-fuck-is-he-plannin"},"data":{"editorial-state":"accepted","id":"1900474"},"children":["I''ve
-        been so quiet, I got the world like \"What the fuck is he plannin''?\""]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1900648/Migos-versace/Just-make-sure-that-you-got-a-back-up-plan-cause-that-shit-might-come-in-handy","class":"has_comments"},"data":{"editorial-state":"accepted","id":"1900648"},"children":["Just
-        make sure that you got a back up plan cause that shit might come in handy"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896324/Migos-versace/Started-a-label"},"data":{"editorial-state":"accepted","id":"1896324"},"children":["Started
-        a label,"]}," ",{"tag":"a","attributes":{"href":"/1896326/Migos-versace/The-album-is-comin-september-just-wait-on-it"},"data":{"editorial-state":"accepted","id":"1896326"},"children":["the
-        album is comin'' September, just wait on it"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896657/Migos-versace/This-year-im-eatin-your-food-and-my-table-got-so-many-plates-on-it"},"data":{"editorial-state":"accepted","id":"1896657"},"children":["This
-        year I''m eatin'' your food and my table got so many plates on it"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1897155/Migos-versace/Hundred-inch-tv-at-my-house-i-sit-back-like-damn-i-look-great-on-it"},"data":{"editorial-state":"accepted","id":"1897155"},"children":["Hundred
-        inch TV at my house, I sit back like \"damn I look great on it\""]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1897162/Migos-versace/I-do-not-fuck-with-your-new-shit-my-nigga-dont-ask-for-my-take-on-it"},"data":{"editorial-state":"accepted","id":"1897162"},"children":["I
-        do not fuck with your new shit, my nigga, don''t ask for my take on it"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/2012171/Migos-versace/Speakin-in-lingo-man-this-for-my-nigga-that-trap-out-the-bando","class":"has_comments"},"data":{"editorial-state":"accepted","id":"2012171"},"children":["Speakin''
-        in lingo, man this for my nigga that trap out the bando"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896916/Migos-versace/This-for-my-niggas-that-call-up-fernando-to-move-a-piano"},"data":{"editorial-state":"accepted","id":"1896916"},"children":["This
-        for my niggas that call up Fernando to move a piano"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896681/Migos-versace/Fuck-all-your-feelins-cause-business-is-business-its-strictly-financial"},"data":{"editorial-state":"accepted","id":"1896681"},"children":["Fuck
-        all your feelin''s cause business is business, its strictly financial"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1897633/Migos-versace/Im-always-the-first-one-to-get-it-man-thats-how-you-lead-by-example-versace-versace-versace-versace-versace-versace"},"data":{"editorial-state":"accepted","id":"1897633"},"children":["I''m
-        always the first one to get it, man that''s how you lead by example",{"tag":"br"},"Versace,
-        Versace, Versace, Versace, Versace, Versace"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1897144/Migos-versace/Word-to-new-york-cause-the-dyckman-and-heights-girls-are-callin-me-papi"},"data":{"editorial-state":"accepted","id":"1897144"},"children":["Word
-        to New York cause the Dyckman and Heights girls are callin'' me \"Papi\""]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1898521/Migos-versace/Im-all-on-the-low-take-a-famous-girl-out-where-theres-no-paparazzi"},"data":{"editorial-state":"accepted","id":"1898521"},"children":["I''m
-        all on the low, take a famous girl out where there''s no paparazzi"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1897136/Migos-versace/Im-tryna-give-halle-berry-a-baby-and-no-one-can-stop-me"},"data":{"editorial-state":"accepted","id":"1897136"},"children":["I''m
-        tryna give Halle Berry a baby and no one can stop me"]},{"tag":"br"},{"tag":"br"},"[Hook:
-        Quavo]",{"tag":"br"},{"tag":"a","attributes":{"href":"/1899433/Migos-versace/Versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace"},"data":{"editorial-state":"accepted","id":"1899433"},"children":["Versace,
-        Versace, Versace, Versace",{"tag":"br"},"Versace, Versace, Versace, Versace",{"tag":"br"},"Versace,
-        Versace Versace, Versace Versace",{"tag":"br"},"Versace, Versace Versace,
-        Versace Versace"]},{"tag":"br"},{"tag":"br"},"[Verse 2: Quavo]",{"tag":"br"},"Versace,
-        Versace, Medusa head on me like I''m ''Luminati",{"tag":"br"},{"tag":"a","attributes":{"href":"/1896374/Migos-versace/I-know-that-you-like-it-versace-my-neck-and-my-wrist-is-so-sloppy"},"data":{"editorial-state":"accepted","id":"1896374"},"children":["I
-        know that you like it, Versace, my neck and my wrist is so sloppy"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1901144/Migos-versace/Versace-versace-i-love-it-versace-the-top-of-my-audi"},"data":{"editorial-state":"accepted","id":"1901144"},"children":["Versace,
-        Versace, I love it, Versace the top of my Audi"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1899420/Migos-versace/My-plug-he-john-gotti-he-give-me-the-ducks-i-know-that-theyre-mighty"},"data":{"editorial-state":"accepted","id":"1899420"},"children":["My
-        plug, he John Gotti, he give me the ducks, I know that they''re mighty"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1900679/Migos-versace/Shoes-and-shirt-versace-your-bitch-want-in-on-my-pockets"},"data":{"editorial-state":"accepted","id":"1900679"},"children":["Shoes
-        and shirt Versace, your bitch want in on my pockets"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1899809/Migos-versace/She-ask-me-why-my-drawers-silk-i-told-that-bitch-versace"},"data":{"editorial-state":"accepted","id":"1899809"},"children":["She
-        ask me why my drawers silk, I told that bitch \"Versace\""]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1899427/Migos-versace/Cheetah-print-on-my-sleeve-but-i-aint-ever-been-in-the-jungle"},"data":{"editorial-state":"accepted","id":"1899427"},"children":["Cheetah
-        print on my sleeve, but I ain''t ever been in the jungle"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1899828/Migos-versace/Try-to-take-my-sack-better-run-with-it-nigga-dont-fumble"},"data":{"editorial-state":"accepted","id":"1899828"},"children":["Try
-        to take my sack, better run with it, nigga don''t fumble"]},{"tag":"br"},{"tag":"br"},"[Hook:
-        Quavo]",{"tag":"br"},{"tag":"br"},"[Verse 3: Takeoff]",{"tag":"br"},{"tag":"a","attributes":{"href":"/1904451/Migos-versace/You-can-do-truey-i-do-it-versace"},"data":{"editorial-state":"accepted","id":"1904451"},"children":["You
-        can do Truey, I do it Versace"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896403/Migos-versace/You-copped-the-honda-i-copped-the-mazi"},"data":{"editorial-state":"accepted","id":"1896403"},"children":["You
-        copped the Honda, I copped the Mazi"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896408/Migos-versace/You-smoke-the-mid-i-smoke-exotic"},"data":{"editorial-state":"accepted","id":"1896408"},"children":["You
-        smoke the mid, I smoke exotic"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1900713/Migos-versace/I-set-the-trend-you-niggas-copy"},"data":{"editorial-state":"accepted","id":"1900713"},"children":["I
-        set the trend, you niggas copy"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1900683/Migos-versace/Cookin-this-dope-like-i-work-at-hibachi"},"data":{"editorial-state":"accepted","id":"1900683"},"children":["Cookin''
-        this dope like I work at Hibachi"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896767/Migos-versace/Look-at-the-watch-blow-it-hot-like-some-taki"},"data":{"editorial-state":"accepted","id":"1896767"},"children":["Look
-        at the watch, blow it, hot like some Taki"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896530/Migos-versace/Come-in-my-room-my-sheet-versace"},"data":{"editorial-state":"accepted","id":"1896530"},"children":["Come
-        in my room, my sheet Versace"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896419/Migos-versace/Go-to-sleep-i-dream-versace"},"data":{"editorial-state":"accepted","id":"1896419"},"children":["Go
-        to sleep, I dream Versace"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1896414/Migos-versace/Medusa-medusa-medusa"},"data":{"editorial-state":"accepted","id":"1896414"},"children":["Medusa,
-        Medusa, Medusa"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1950408/Migos-versace/These-niggas-they-wishin-they-knew-you","class":"has_comments"},"data":{"editorial-state":"accepted","id":"1950408"},"children":["These
-        niggas they wishin'' they knew you"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1901943/Migos-versace/They-coppin-the-truey-remixin-the-louis"},"data":{"editorial-state":"accepted","id":"1901943"},"children":["They
-        coppin'' the Truey, remixin'' the Louis"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1901946/Migos-versace/My-blunts-is-fat-as-rasputia"},"data":{"editorial-state":"accepted","id":"1901946"},"children":["My
-        blunts is fat as Rasputia"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1913879/Migos-versace/In-a-striped-shirt-like-im-tony-the-tiger"},"data":{"editorial-state":"accepted","id":"1913879"},"children":["In
-        a striped shirt like I\u2019m Tony the Tiger"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1911286/Migos-versace/Im-beatin-the-pot-call-me-michael"},"data":{"editorial-state":"accepted","id":"1911286"},"children":["I\u2019m
-        beatin'' the pot, call me Michael"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1902513/Migos-versace/Lot-of-you-niggas-that-copy-look-at-my-closet-versace-versace"},"data":{"editorial-state":"accepted","id":"1902513"},"children":["Lot
-        of you niggas that copy",{"tag":"br"},"Look at my closet Versace, Versace"]},{"tag":"br"},{"tag":"br"},"[Hook:
-        Quavo]",{"tag":"br"},{"tag":"br"},"[Verse 4: Offset]",{"tag":"br"},{"tag":"a","attributes":{"href":"/1902542/Migos-versace/King-of-versace-medusa-my-wifey"},"data":{"editorial-state":"accepted","id":"1902542"},"children":["King
-        of Versace, Medusa my wifey"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1902526/Migos-versace/My-car-is-versace-i-got-stripes-on-my-mazi"},"data":{"editorial-state":"accepted","id":"1902526"},"children":["My
-        car is Versace, I got stripes on my Mazi"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1904435/Migos-versace/Im-dressin-so-nicely-they-cant-even-copy"},"data":{"editorial-state":"accepted","id":"1904435"},"children":["I''m
-        dressin'' so nicely they can''t even copy"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1901516/Migos-versace/Youd-think-im-egyptian-this-gold-on-my-body"},"data":{"editorial-state":"accepted","id":"1901516"},"children":["You''d
-        think I''m Egyptian, this gold on my body"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1902556/Migos-versace/Money-my-mission-two-bitches-they-kissin"},"data":{"editorial-state":"accepted","id":"1902556"},"children":["Money
-        my mission, two bitches, they kissin''"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1924730/Migos-versace/My-diamonds-is-pissin"},"data":{"editorial-state":"accepted","id":"1924730"},"children":["My
-        diamonds is pissin''"]},", ",{"tag":"a","attributes":{"href":"/1936022/Migos-versace/My-swag-is-exquisite"},"data":{"editorial-state":"accepted","id":"1936022"},"children":["my
-        swag is exquisite"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1904437/Migos-versace/Young-offset-no-preacher-but-you-niggas-listen"},"data":{"editorial-state":"accepted","id":"1904437"},"children":["Young
-        Offset no preacher but you niggas listen"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1902669/Migos-versace/Them-blue-and-white-diamonds-they-look-like-the-pistons"},"data":{"editorial-state":"accepted","id":"1902669"},"children":["Them
-        blue and white diamonds, they look like the Pistons"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1902562/Migos-versace/Codeine-sippin-versace-im-grippin-them-bands-in-my-pocket"},"data":{"editorial-state":"accepted","id":"1902562"},"children":["Codeine
-        sippin, Versace I\u2019m grippin'' them bands in my pocket"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1950394/Migos-versace/You-know-that-im-livin"},"data":{"editorial-state":"accepted","id":"1950394"},"children":["You
-        know that I\u2019m livin''"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1930489/Migos-versace/Im-draped-up-in-gold-but-no-pharaoh"},"data":{"editorial-state":"accepted","id":"1930489"},"children":["I\u2019m
-        draped up in gold, but no Pharaoh"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1930391/Migos-versace/Rockin-handcuffs-thats-ferragamo"},"data":{"editorial-state":"accepted","id":"1930391"},"children":["Rockin''
-        handcuffs, that\u2019s Ferragamo"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1935937/Migos-versace/Bricks-by-the-boat-overload"},"data":{"editorial-state":"accepted","id":"1935937"},"children":["Bricks
-        by the boat, overload"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1903068/Migos-versace/I-think-im-the-don-but-no-rocco"},"data":{"editorial-state":"accepted","id":"1903068"},"children":["I
-        think I\u2019m the don, but no Rocco"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1902577/Migos-versace/This-the-life-that-i-chose"},"data":{"editorial-state":"accepted","id":"1902577"},"children":["This
-        the life that I chose"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1903071/Migos-versace/Bought-out-the-store-cant-go-back-no-more"},"data":{"editorial-state":"accepted","id":"1903071"},"children":["Bought
-        out the store, can\u2019t go back no more"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/2609403/Migos-versace/Versace-my-clothes-while-im-sellin-them-bows"},"data":{"editorial-state":"accepted","id":"2609403"},"children":["Versace
-        my clothes while I\u2019m sellin'' them bows"]},{"tag":"br"},{"tag":"a","attributes":{"href":"/1932794/Migos-versace/Versace-take-over-it-took-out-my-soul"},"data":{"editorial-state":"accepted","id":"1932794"},"children":["Versace
-        take over it took out my soul"]},{"tag":"br"},{"tag":"br"},"[Hook: Quavo]"]}]}},"annotation_count":69,"id":176872,"bop_url":"http://www.bop.fm/embed/Migos/Versace/http%3A%2F%2Frapgenius.com%2FMigos-versace-lyrics?pref_track%5B%5D=https%3A%2F%2Fsoundcloud.com%2Fmixtapemechaniks%2Fmigos-ft-drake-versace-remix&pref_track%5B%5D=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPAYpmylJCn0","verified_annotation_count":0}},"meta":{"status":200}}'
-    http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:02:12 GMT
-- request:
-    method: get
-    uri: https://api.rapgenius.com/referents/2638695
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - rapgenius.rb v1.0.0
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - private, max-age=0, must-revalidate
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Jan 2015 21:09:44 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Sat, 01 Feb 2014 22:02:02 GMT
-      Etag:
-      - '"04c063c67cb779f3943200beff0dcff3"'
-      Server:
-      - nginx/1.4.1
+      Content-Length:
+      - '4018'
       Status:
       - 200 OK
+      Etag:
+      - '"e5c6d7501c2ae8323b810441cf55ee68"'
+      Access-Control-Allow-Headers:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Type,
+        Accept, X-Auth-Token
+      Cache-Control:
+      - private, max-age=0, must-revalidate
       X-Runtime:
-      - '43'
-      Content-Length:
-      - '2190'
-      Connection:
-      - keep-alive
+      - '104'
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"response":{"referent":{"tracking_paths":{"aggregate":"/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati","concurrent":"/Migos-versace-lyrics"},"song_id":176872,"annotations":[{"verified_by":null,"authors":[{"attribution":1.0,"user":{"avatar":{"tiny":{"bounding_box":{"height":16,"width":16},"url":"http://s3.amazonaws.com/rapgenius/avatars/tiny/MJLDklSFShqys2vAf1W7.gif"},"thumb":{"bounding_box":{"height":32,"width":32},"url":"http://s3.amazonaws.com/rapgenius/avatars/thumb/MJLDklSFShqys2vAf1W7.gif"}},"iq":26438.7376777,"name":"Curumno","id":11917,"role_for_display":"moderator"}}],"votes_total":1,"body":{"dom":{"tag":"root","children":[{"tag":"p","children":["Versace\u2019s
+      string: '{"response":{"referent":{"path":"/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati","tracking_paths":{"aggregate":"/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati","concurrent":"/Migos-versace-lyrics"},"api_path":"/referents/2638695","twitter_share_message":{"wrapped_string":"\u201cVersace\u2019s
+        logo is the head of Medusa from Greek mythology (who had snakes for hair and
+        whose ga...\u201d\u2013Curumno"},"range":null,"annotations":[{"current_user_metadata":{"permissions":[],"interactions":{"cosign":false,"vote":null}},"verified_by":null,"state":"accepted","cosigned_by":[],"pinned":false,"share_url":"http://genius.com/2638695","url":"http://genius.com/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati","votes_total":10,"body":{"plain":"Versace\u2019s
+        logo is the head of Medusa from Greek mythology (who had snakes for hair and
+        whose gaze turned onlookers to stone). Since supposed symbols of the Illuminati
+        often incorporate classical imagery and indicators of wealth, a Versace Medusa
+        head would be very appropriate for Drake and Migos to wear if they were members
+        of the Illuminati.\n\nFurthermore, several other famous rappers are accused
+        as being associated with the Illuminati (especially Jay Z and Kanye West),
+        so they are subtly holding themselves to their level of celebrity by making
+        similar pretensions about themselves.","dom":{"tag":"root","children":[{"tag":"p","children":["Versace\u2019s
         logo is the head of Medusa from Greek mythology (who had snakes for hair and
         whose gaze turned onlookers to stone). Since supposed symbols of the ",{"tag":"a","attributes":{"href":"https://en.wikipedia.org/wiki/Illuminati","rel":"nofollow"},"children":["Illuminati"]},"
         often incorporate classical imagery and indicators of wealth, a Versace Medusa
-        head would be very appropriate for Drake to wear if he were a member of the
-        Illuminati"]},"",{"tag":"p","children":["Furthermore, several other famous
-        rappers are accused as being associated with the Illuminati (especially ",{"tag":"a","attributes":{"href":"http://rapgenius.com/artists/Jay-z"},"children":["Jay
-        Z"]}," and ",{"tag":"a","attributes":{"href":"http://rapgenius.com/artists/Kanye-west"},"children":["Kanye
-        West"]},"), so Drake is subtly holding himself to their level of celebrity
-        by making similar pretensions about himself"]},"",{"tag":"p","children":[{"tag":"img","attributes":{"alt":"","height":1000,"width":807,"src":"http://images.rapgenius.com/bca36ab6f88cea01921575bb41c4e2f7.807x1000x1.png"},"data":{"thumbnail":{"width":300,"height":372,"src":"http://images.rapgenius.com/bca36ab6f88cea01921575bb41c4e2f7.300x372x1.png"},"animated":"false"}}]}]}},"url":"http://rapgenius.com/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati","share_url":"http://rapgenius.com/2638695","id":2638695}],"fragment":"Versace,
-        Versace, Medusa head on me like I''m ''luminati","id":2638695}},"meta":{"status":200}}'
+        head would be very appropriate for Drake and Migos to wear if they were members
+        of the Illuminati."]},"",{"tag":"p","children":["Furthermore, several other
+        famous rappers are accused as being associated with the Illuminati (especially
+        ",{"tag":"a","data":{"api_path":"/artists/2"},"attributes":{"href":"http://genius.com/artists/Jay-z"},"children":["Jay
+        Z"]}," and ",{"tag":"a","data":{"api_path":"/artists/72"},"attributes":{"href":"http://genius.com/artists/Kanye-west"},"children":["Kanye
+        West"]},"), so they are subtly holding themselves to their level of celebrity
+        by making similar pretensions about themselves."]},"",{"tag":"p","children":[{"tag":"img","data":{"thumbnail":{"width":300,"height":368,"src":"http://images.rapgenius.com/c50fdc165e8bb512f33a9d1a28c26d0e.300x368x1.jpg"},"animated":"false"},"attributes":{"width":815,"alt":"","height":1000,"src":"http://images.rapgenius.com/c50fdc165e8bb512f33a9d1a28c26d0e.815x1000x1.jpg"}}]}]}},"authors":[{"attribution":0.955696202531646,"user":{"avatar":{"tiny":{"url":"http://images.rapgenius.com/avatars/tiny/da5c076c96eb839f9aa22469ab0b2ca5","bounding_box":{"width":16,"height":16}},"thumb":{"url":"http://images.rapgenius.com/avatars/thumb/da5c076c96eb839f9aa22469ab0b2ca5","bounding_box":{"width":32,"height":32}}},"iq":32162.7411059396,"name":"Curumno","id":11917,"role_for_display":"moderator"}},{"attribution":0.0443037974683544,"user":{"avatar":{"tiny":{"url":"http://images.rapgenius.com/avatars/tiny/3d7339f2dc7264715aa495799d1b5bc3","bounding_box":{"width":16,"height":16}},"thumb":{"url":"http://images.rapgenius.com/avatars/thumb/3d7339f2dc7264715aa495799d1b5bc3","bounding_box":{"width":32,"height":32}}},"iq":11383.1894834414,"name":"TruSwag","id":1101903,"role_for_display":"editor"}}],"id":2638695}],"url":"http://genius.com/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati","embed_url":"//genius.com/annotations/2638695/embed","id":2638695,"classification":"accepted","song_id":176872,"annotatable":{"type":"Song","title":"Versace","url":"http://genius.com/Migos-versace-lyrics","id":176872},"fragment":"Versace,
+        Versace, Medusa head on me like I''m ''luminati"}},"meta":{"status":200}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:02:15 GMT
+  recorded_at: Mon, 12 Jan 2015 21:09:44 GMT
 - request:
     method: get
-    uri: https://api.rapgenius.com/referents/bahahaha
+    uri: https://api.rapgenius.com/songs/176872?text_format=dom,plain
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - rapgenius.rb v1.0.0
+      - rapgenius.rb v1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Jan 2015 21:11:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '28910'
+      Status:
+      - 200 OK
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Access-Control-Allow-Headers:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Type,
+        Accept, X-Auth-Token
+      X-Runtime:
+      - '30'
+      Etag:
+      - '"388c576ae252dbe805bac0e794510524"'
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"response":{"song":{"current_user_metadata":{"interactions":{"pyong":false},"permissions":[]},"producer_artists":[{"url":"http://genius.com/artists/Zaytoven","name":"Zaytoven","image_url":"http://s3.amazonaws.com/rapgenius/Zaytoven_1-7-2011.jpg","id":27822}],"bop_url":"http://www.bop.fm/embed/Migos/Versace/http%3A%2F%2Fgenius.com%2FMigos-versace-lyrics?pref_track%5B%5D=https%3A%2F%2Fsoundcloud.com%2Foctobersveryown%2Fmigos-versace-feat-drake&pref_track%5B%5D=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DOmHW9IzZYzU","title":"Versace","primary_artist":{"url":"http://genius.com/artists/Migos","name":"Migos","image_url":"http://images.rapgenius.com/f6bd7db3498f5cdf27cd747a4a02df13.700x420x1.jpg","id":44080},"updated_by_human_at":1419170327,"lyrics_updated_at":1419170327,"lyrics":{"plain":"[Verse
+        1: Drake]\nVersace, Versace, Medusa head on me like I''m ''luminati\nThis
+        is a gated community, please get the fuck off the property\nRap must be changin''
+        cause I''m at the top and ain''t no one on top of me\nNiggas be wantin'' a
+        verse for a verse, but man that''s not a swap to me\nDrownin'' in compliments,
+        pool in the backyard that look like Metropolis\nI think I''m sellin'' a million
+        first week, man I guess I''m a optimist\nBorn in Toronto but sometimes I feel
+        like Atlanta adopted us\nWhat the fuck is you talkin'' ''bout? Saw this shit
+        comin'' like I had binoculars\nBoy, Versace, Versace, we stay at the mansion
+        when we in Miami\nThe pillows'' Versace, the sheets are Versace, I just won
+        a Grammy\nI''ve been so quiet, I got the world like \"What the fuck is he
+        plannin''?\"\nJust make sure that you got a back up plan cause that shit might
+        come in handy\nStarted a label, the album is comin'' September, just wait
+        on it\nThis year I''m eatin'' your food and my table got so many plates on
+        it\nHundred inch TV at my house, I sit back like \"damn I look great on it\"\nI
+        do not fuck with your new shit, my nigga, don''t ask for my take on it\nSpeakin''
+        in lingo, man this for my nigga that trap out the bando\nThis for my niggas
+        that call up Fernando to move a piano\nFuck all your feelin''s cause business
+        is business, its strictly financial\nI''m always the first one to get it,
+        man that''s how you lead by example\nVersace, Versace, Versace, Versace, Versace,
+        Versace\nWord to New York cause the Dyckman and Heights girls are callin''
+        me \"Papi\"\nI''m all on the low, take a famous girl out where there''s no
+        paparazzi\nI''m tryna give Halle Berry a baby and no one can stop me\n\n[Hook:
+        Quavo]\nVersace, Versace, Versace, Versace\nVersace, Versace, Versace, Versace\nVersace,
+        Versace Versace, Versace Versace\nVersace, Versace Versace, Versace Versace\n\n[Verse
+        2: Quavo]\nVersace, Versace, Medusa head on me like I''m ''Luminati\nI know
+        that you like it, Versace, my neck and my wrist is so sloppy\nVersace, Versace,
+        I love it, Versace the top of my Audi\nMy plug, he John Gotti, he give me
+        the ducks, I know that they''re mighty\nShoes and shirt Versace, your bitch
+        want in on my pockets\nShe ask me why my drawers silk, I told that bitch \"Versace\"\nCheetah
+        print on my sleeve, but I ain''t ever been in the jungle\nTry to take my sack,
+        better run with it, nigga don''t fumble\n\n[Hook: Quavo]\n\n[Verse 3: Takeoff]\nYou
+        can do Truey, I do it Versace\nYou copped the Honda, I copped the Mazi\nYou
+        smoke the mid, I smoke exotic\nI set the trend, you niggas copy\nCookin''
+        this dope like I work at Hibachi\nLook at the watch, blow it, hot like some
+        Taki\nCome in my room, my sheet Versace\nGo to sleep, I dream Versace\nMedusa,
+        Medusa, Medusa\nThese niggas they wishin'' they knew you\nThey coppin'' the
+        Truey, remixin'' the Louis\nMy blunts is fat as Rasputia\nIn a striped shirt
+        like I\u2019m Tony the Tiger\nI\u2019m beatin'' the pot, call me Michael\nLot
+        of you niggas that copy\nLook at my closet Versace, Versace\n\n[Hook: Quavo]\n\n[Verse
+        4: Offset]\nKing of Versace, Medusa my wifey\nMy car is Versace, I got stripes
+        on my Mazi\nI''m dressin'' so nicely they can''t even copy\nYou''d think I''m
+        Egyptian, this gold on my body\nMoney my mission, two bitches, they kissin''\nMy
+        diamonds is pissin'', my swag is exquisite\nYoung Offset no preacher but you
+        niggas listen\nThem blue and white diamonds, they look like the Pistons\nCodeine
+        sippin, Versace I\u2019m grippin'' them bands in my pocket\nYou know that
+        I\u2019m livin''\nI\u2019m draped up in gold, but no Pharaoh\nRockin'' handcuffs,
+        that\u2019s Ferragamo\nBricks by the boat, overload\nI think I\u2019m the
+        don, but no Rocco\nThis the life that I chose\nBought out the store, can\u2019t
+        go back no more\nVersace my clothes while I\u2019m sellin'' them bows\nVersace
+        take over it took out my soul\n\n[Hook: Quavo]\n\n","dom":{"tag":"root","children":[{"tag":"p","children":[{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1983907"},"attributes":{"href":"/1983907/Migos-versace/Verse-1-drake"},"children":["[Verse
+        1: Drake]"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"2638695"},"attributes":{"href":"/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati"},"children":["Versace,
+        Versace, Medusa head on me like I''m ''luminati"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896313"},"attributes":{"href":"/1896313/Migos-versace/This-is-a-gated-community-please-get-the-fuck-off-the-property","class":"has_comments"},"children":["This
+        is a gated community, please get the fuck off the property"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1899445"},"attributes":{"href":"/1899445/Migos-versace/Rap-must-be-changin-cause-im-at-the-top-and-aint-no-one-on-top-of-me"},"children":["Rap
+        must be changin'' cause I''m at the top and ain''t no one on top of me"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896335"},"attributes":{"href":"/1896335/Migos-versace/Niggas-be-wantin-a-verse-for-a-verse-but-man-thats-not-a-swap-to-me"},"children":["Niggas
+        be wantin'' a verse for a verse, but man that''s not a swap to me"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896339"},"attributes":{"href":"/1896339/Migos-versace/Drownin-in-compliments-pool-in-the-backyard-that-look-like-metropolis","class":"has_comments"},"children":["Drownin''
+        in compliments, pool in the backyard that look like Metropolis"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896350"},"attributes":{"href":"/1896350/Migos-versace/I-think-im-sellin-a-million-first-week-man-i-guess-im-a-optimist"},"children":["I
+        think I''m sellin'' a million first week, man I guess I''m a optimist"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896354"},"attributes":{"href":"/1896354/Migos-versace/Born-in-toronto-but-sometimes-i-feel-like-atlanta-adopted-us"},"children":["Born
+        in Toronto but sometimes I feel like Atlanta adopted us"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896592"},"attributes":{"href":"/1896592/Migos-versace/What-the-fuck-is-you-talkin-bout-saw-this-shit-comin-like-i-had-binoculars"},"children":["What
+        the fuck is you talkin'' ''bout? Saw this shit comin'' like I had binoculars"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1898529"},"attributes":{"href":"/1898529/Migos-versace/Boy-versace-versace"},"children":["Boy,
+        Versace, Versace,"]}," ",{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1897411"},"attributes":{"href":"/1897411/Migos-versace/We-stay-at-the-mansion-when-we-in-miami"},"children":["we
+        stay at the mansion when we in Miami"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1898530"},"attributes":{"href":"/1898530/Migos-versace/The-pillows-versace-the-sheets-are-versace"},"children":["The
+        pillows'' Versace, the sheets are Versace,"]}," ",{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896616"},"attributes":{"href":"/1896616/Migos-versace/I-just-won-a-grammy"},"children":["I
+        just won a Grammy"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1900474"},"attributes":{"href":"/1900474/Migos-versace/Ive-been-so-quiet-i-got-the-world-like-what-the-fuck-is-he-plannin"},"children":["I''ve
+        been so quiet, I got the world like \"What the fuck is he plannin''?\""]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1900648"},"attributes":{"href":"/1900648/Migos-versace/Just-make-sure-that-you-got-a-back-up-plan-cause-that-shit-might-come-in-handy"},"children":["Just
+        make sure that you got a back up plan cause that shit might come in handy"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896324"},"attributes":{"href":"/1896324/Migos-versace/Started-a-label"},"children":["Started
+        a label,"]}," ",{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896326"},"attributes":{"href":"/1896326/Migos-versace/The-album-is-comin-september-just-wait-on-it"},"children":["the
+        album is comin'' September, just wait on it"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896657"},"attributes":{"href":"/1896657/Migos-versace/This-year-im-eatin-your-food-and-my-table-got-so-many-plates-on-it"},"children":["This
+        year I''m eatin'' your food and my table got so many plates on it"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1897155"},"attributes":{"href":"/1897155/Migos-versace/Hundred-inch-tv-at-my-house-i-sit-back-like-damn-i-look-great-on-it"},"children":["Hundred
+        inch TV at my house, I sit back like \"damn I look great on it\""]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1897162"},"attributes":{"href":"/1897162/Migos-versace/I-do-not-fuck-with-your-new-shit-my-nigga-dont-ask-for-my-take-on-it"},"children":["I
+        do not fuck with your new shit, my nigga, don''t ask for my take on it"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"2012171"},"attributes":{"href":"/2012171/Migos-versace/Speakin-in-lingo-man-this-for-my-nigga-that-trap-out-the-bando"},"children":["Speakin''
+        in lingo, man this for my nigga that trap out the bando"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896916"},"attributes":{"href":"/1896916/Migos-versace/This-for-my-niggas-that-call-up-fernando-to-move-a-piano","class":"has_comments"},"children":["This
+        for my niggas that call up Fernando to move a piano"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896681"},"attributes":{"href":"/1896681/Migos-versace/Fuck-all-your-feelins-cause-business-is-business-its-strictly-financial"},"children":["Fuck
+        all your feelin''s cause business is business, its strictly financial"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1897633"},"attributes":{"href":"/1897633/Migos-versace/Im-always-the-first-one-to-get-it-man-thats-how-you-lead-by-example-versace-versace-versace-versace-versace-versace"},"children":["I''m
+        always the first one to get it, man that''s how you lead by example",{"tag":"br"},"Versace,
+        Versace, Versace, Versace, Versace, Versace"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1897144"},"attributes":{"href":"/1897144/Migos-versace/Word-to-new-york-cause-the-dyckman-and-heights-girls-are-callin-me-papi"},"children":["Word
+        to New York cause the Dyckman and Heights girls are callin'' me \"Papi\""]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1898521"},"attributes":{"href":"/1898521/Migos-versace/Im-all-on-the-low-take-a-famous-girl-out-where-theres-no-paparazzi"},"children":["I''m
+        all on the low, take a famous girl out where there''s no paparazzi"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1897136"},"attributes":{"href":"/1897136/Migos-versace/Im-tryna-give-halle-berry-a-baby-and-no-one-can-stop-me"},"children":["I''m
+        tryna give Halle Berry a baby and no one can stop me"]},{"tag":"br"},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"3072060"},"attributes":{"href":"/3072060/Migos-versace/Hook-quavo"},"children":["[Hook:
+        Quavo]"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1899433"},"attributes":{"href":"/1899433/Migos-versace/Versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace-versace"},"children":["Versace,
+        Versace, Versace, Versace",{"tag":"br"},"Versace, Versace, Versace, Versace",{"tag":"br"},"Versace,
+        Versace Versace, Versace Versace",{"tag":"br"},"Versace, Versace Versace,
+        Versace Versace"]},{"tag":"br"},{"tag":"br"},"[Verse 2: Quavo]",{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"2638695"},"attributes":{"href":"/2638695/Migos-versace/Versace-versace-medusa-head-on-me-like-im-luminati"},"children":["Versace,
+        Versace, Medusa head on me like I''m ''Luminati"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896374"},"attributes":{"href":"/1896374/Migos-versace/I-know-that-you-like-it-versace-my-neck-and-my-wrist-is-so-sloppy"},"children":["I
+        know that you like it, Versace, my neck and my wrist is so sloppy"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"cosigned","id":"1901144"},"attributes":{"href":"/1901144/Migos-versace/Versace-versace-i-love-it-versace-the-top-of-my-audi","class":"has_verified_annotation"},"children":["Versace,
+        Versace, I love it, Versace the top of my Audi"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"cosigned","id":"1899420"},"attributes":{"href":"/1899420/Migos-versace/My-plug-he-john-gotti-he-give-me-the-ducks-i-know-that-theyre-mighty","class":"has_verified_annotation"},"children":["My
+        plug, he John Gotti, he give me the ducks, I know that they''re mighty"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1900679"},"attributes":{"href":"/1900679/Migos-versace/Shoes-and-shirt-versace-your-bitch-want-in-on-my-pockets","class":"has_comments"},"children":["Shoes
+        and shirt Versace, your bitch want in on my pockets"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1899809"},"attributes":{"href":"/1899809/Migos-versace/She-ask-me-why-my-drawers-silk-i-told-that-bitch-versace"},"children":["She
+        ask me why my drawers silk, I told that bitch \"Versace\""]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1899427"},"attributes":{"href":"/1899427/Migos-versace/Cheetah-print-on-my-sleeve-but-i-aint-ever-been-in-the-jungle","class":"has_comments"},"children":["Cheetah
+        print on my sleeve, but I ain''t ever been in the jungle"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"cosigned","id":"1899828"},"attributes":{"href":"/1899828/Migos-versace/Try-to-take-my-sack-better-run-with-it-nigga-dont-fumble","class":"has_verified_annotation"},"children":["Try
+        to take my sack, better run with it, nigga don''t fumble"]},{"tag":"br"},{"tag":"br"},"[Hook:
+        Quavo]",{"tag":"br"},{"tag":"br"},"[Verse 3: Takeoff]",{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1904451"},"attributes":{"href":"/1904451/Migos-versace/You-can-do-truey-i-do-it-versace"},"children":["You
+        can do Truey, I do it Versace"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896403"},"attributes":{"href":"/1896403/Migos-versace/You-copped-the-honda-i-copped-the-mazi"},"children":["You
+        copped the Honda, I copped the Mazi"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896408"},"attributes":{"href":"/1896408/Migos-versace/You-smoke-the-mid-i-smoke-exotic"},"children":["You
+        smoke the mid, I smoke exotic"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1900713"},"attributes":{"href":"/1900713/Migos-versace/I-set-the-trend-you-niggas-copy"},"children":["I
+        set the trend, you niggas copy"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1900683"},"attributes":{"href":"/1900683/Migos-versace/Cookin-this-dope-like-i-work-at-hibachi"},"children":["Cookin''
+        this dope like I work at Hibachi"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896767"},"attributes":{"href":"/1896767/Migos-versace/Look-at-the-watch-blow-it-hot-like-some-taki"},"children":["Look
+        at the watch, blow it, hot like some Taki"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896530"},"attributes":{"href":"/1896530/Migos-versace/Come-in-my-room-my-sheet-versace"},"children":["Come
+        in my room, my sheet Versace"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896419"},"attributes":{"href":"/1896419/Migos-versace/Go-to-sleep-i-dream-versace","class":"has_comments"},"children":["Go
+        to sleep, I dream Versace"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1896414"},"attributes":{"href":"/1896414/Migos-versace/Medusa-medusa-medusa"},"children":["Medusa,
+        Medusa, Medusa"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1950408"},"attributes":{"href":"/1950408/Migos-versace/These-niggas-they-wishin-they-knew-you"},"children":["These
+        niggas they wishin'' they knew you"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1901943"},"attributes":{"href":"/1901943/Migos-versace/They-coppin-the-truey-remixin-the-louis"},"children":["They
+        coppin'' the Truey, remixin'' the Louis"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1901946"},"attributes":{"href":"/1901946/Migos-versace/My-blunts-is-fat-as-rasputia"},"children":["My
+        blunts is fat as Rasputia"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1913879"},"attributes":{"href":"/1913879/Migos-versace/In-a-striped-shirt-like-im-tony-the-tiger"},"children":["In
+        a striped shirt like I\u2019m Tony the Tiger"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1911286"},"attributes":{"href":"/1911286/Migos-versace/Im-beatin-the-pot-call-me-michael"},"children":["I\u2019m
+        beatin'' the pot, call me Michael"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1902513"},"attributes":{"href":"/1902513/Migos-versace/Lot-of-you-niggas-that-copy-look-at-my-closet-versace-versace"},"children":["Lot
+        of you niggas that copy",{"tag":"br"},"Look at my closet Versace, Versace"]},{"tag":"br"},{"tag":"br"},"[Hook:
+        Quavo]",{"tag":"br"},{"tag":"br"},"[Verse 4: Offset]",{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1902542"},"attributes":{"href":"/1902542/Migos-versace/King-of-versace-medusa-my-wifey"},"children":["King
+        of Versace, Medusa my wifey"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1902526"},"attributes":{"href":"/1902526/Migos-versace/My-car-is-versace-i-got-stripes-on-my-mazi"},"children":["My
+        car is Versace, I got stripes on my Mazi"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1904435"},"attributes":{"href":"/1904435/Migos-versace/Im-dressin-so-nicely-they-cant-even-copy"},"children":["I''m
+        dressin'' so nicely they can''t even copy"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"verified","id":"1901516"},"attributes":{"href":"/1901516/Migos-versace/Youd-think-im-egyptian-this-gold-on-my-body","class":"has_pinned_annotation
+        has_verified_annotation"},"children":["You''d think I''m Egyptian, this gold
+        on my body"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1902556"},"attributes":{"href":"/1902556/Migos-versace/Money-my-mission-two-bitches-they-kissin"},"children":["Money
+        my mission, two bitches, they kissin''"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1924730"},"attributes":{"href":"/1924730/Migos-versace/My-diamonds-is-pissin"},"children":["My
+        diamonds is pissin''"]},", ",{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1936022"},"attributes":{"href":"/1936022/Migos-versace/My-swag-is-exquisite"},"children":["my
+        swag is exquisite"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1904437"},"attributes":{"href":"/1904437/Migos-versace/Young-offset-no-preacher-but-you-niggas-listen"},"children":["Young
+        Offset no preacher but you niggas listen"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1902669"},"attributes":{"href":"/1902669/Migos-versace/Them-blue-and-white-diamonds-they-look-like-the-pistons"},"children":["Them
+        blue and white diamonds, they look like the Pistons"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1902562"},"attributes":{"href":"/1902562/Migos-versace/Codeine-sippin-versace-im-grippin-them-bands-in-my-pocket"},"children":["Codeine
+        sippin, Versace I\u2019m grippin'' them bands in my pocket"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1950394"},"attributes":{"href":"/1950394/Migos-versace/You-know-that-im-livin"},"children":["You
+        know that I\u2019m livin''"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1930489"},"attributes":{"href":"/1930489/Migos-versace/Im-draped-up-in-gold-but-no-pharaoh"},"children":["I\u2019m
+        draped up in gold, but no Pharaoh"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1930391"},"attributes":{"href":"/1930391/Migos-versace/Rockin-handcuffs-thats-ferragamo"},"children":["Rockin''
+        handcuffs, that\u2019s Ferragamo"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1935937"},"attributes":{"href":"/1935937/Migos-versace/Bricks-by-the-boat-overload"},"children":["Bricks
+        by the boat, overload"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1903068"},"attributes":{"href":"/1903068/Migos-versace/I-think-im-the-don-but-no-rocco","class":"has_comments"},"children":["I
+        think I\u2019m the don, but no Rocco"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1902577"},"attributes":{"href":"/1902577/Migos-versace/This-the-life-that-i-chose"},"children":["This
+        the life that I chose"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1903071"},"attributes":{"href":"/1903071/Migos-versace/Bought-out-the-store-cant-go-back-no-more"},"children":["Bought
+        out the store, can\u2019t go back no more"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"2609403"},"attributes":{"href":"/2609403/Migos-versace/Versace-my-clothes-while-im-sellin-them-bows"},"children":["Versace
+        my clothes while I\u2019m sellin'' them bows"]},{"tag":"br"},{"tag":"a","data":{"editorial-state":"accepted","classification":"accepted","id":"1932794"},"attributes":{"href":"/1932794/Migos-versace/Versace-take-over-it-took-out-my-soul"},"children":["Versace
+        take over it took out my soul"]},{"tag":"br"},{"tag":"br"},"[Hook: Quavo]"]}]}},"annotation_count":1,"pyongs_count":166,"description":{"plain":"After
+        this Zaytoven-produced beat was originally taken by Plies for \"Bitch a Hoe\"
+        and then to Soulja Boy Tell ''Em for \"OMG Pt. 2\", it landed on Migos'' Y.R.N
+        (Young Rich Niggas) Mixtape in the form of \"Versace.\" When the song blew
+        up and came to the attention of Drake, he rapped a verse to create this remix
+        and made the song even more famous.","dom":{"tag":"root","children":[{"tag":"p","children":["After
+        this Zaytoven-produced beat was originally taken by Plies for \"",{"tag":"a","data":{"api_path":"/songs/91009"},"attributes":{"href":"http://rap.genius.com/Plies-bitch-a-hoe-lyrics"},"children":["Bitch
+        a Hoe"]},"\" and then to Soulja Boy Tell ''Em for \"",{"tag":"a","attributes":{"href":"http://www.youtube.com/watch?v=x-jJilb4HLo","rel":"nofollow"},"children":["OMG
+        Pt. 2"]},"\", it landed on Migos'' ",{"tag":"em","children":["Y.R.N (Young
+        Rich Niggas)"]}," Mixtape in the form of \"Versace.\" When the song blew up
+        and came to the attention of Drake, he rapped a verse to create this remix
+        and made the song even more famous."]},"",{"tag":"p","children":[{"tag":"img","data":{"thumbnail":{"width":300,"height":300,"src":"http://images.rapgenius.com/cc9b2e445d9dd264e9f224f7f4aefde2.300x300x1.jpg"},"animated":"false"},"attributes":{"alt":"","width":500,"height":500,"src":"http://images.rapgenius.com/cc9b2e445d9dd264e9f224f7f4aefde2.500x500x1.jpg"}}]}]}},"description_annotation":{"current_user_metadata":{"interactions":{"cosign":false,"vote":null},"permissions":[]},"verified_by":null,"cosigned_by":[],"state":"accepted","pinned":false,"share_url":"http://genius.com/3833651","url":"http://genius.com/3833651/Migos-versace/Migos-ft-drake-versace","votes_total":1,"body":{"plain":"After
+        this Zaytoven-produced beat was originally taken by Plies for \"Bitch a Hoe\"
+        and then to Soulja Boy Tell ''Em for \"OMG Pt. 2\", it landed on Migos'' Y.R.N
+        (Young Rich Niggas) Mixtape in the form of \"Versace.\" When the song blew
+        up and came to the attention of Drake, he rapped a verse to create this remix
+        and made the song even more famous.","dom":{"tag":"root","children":[{"tag":"p","children":["After
+        this Zaytoven-produced beat was originally taken by Plies for \"",{"tag":"a","data":{"api_path":"/songs/91009"},"attributes":{"href":"http://rap.genius.com/Plies-bitch-a-hoe-lyrics"},"children":["Bitch
+        a Hoe"]},"\" and then to Soulja Boy Tell ''Em for \"",{"tag":"a","attributes":{"href":"http://www.youtube.com/watch?v=x-jJilb4HLo","rel":"nofollow"},"children":["OMG
+        Pt. 2"]},"\", it landed on Migos'' ",{"tag":"em","children":["Y.R.N (Young
+        Rich Niggas)"]}," Mixtape in the form of \"Versace.\" When the song blew up
+        and came to the attention of Drake, he rapped a verse to create this remix
+        and made the song even more famous."]},"",{"tag":"p","children":[{"tag":"img","data":{"thumbnail":{"width":300,"height":300,"src":"http://images.rapgenius.com/cc9b2e445d9dd264e9f224f7f4aefde2.300x300x1.jpg"},"animated":"false"},"attributes":{"alt":"","width":500,"height":500,"src":"http://images.rapgenius.com/cc9b2e445d9dd264e9f224f7f4aefde2.500x500x1.jpg"}}]}]}},"authors":[{"attribution":1.0,"user":{"iq":439.441561512366,"name":"TheRealSappy","avatar":{"tiny":{"url":"http://s3.amazonaws.com/rapgenius/avatars/tiny/lXZtm1i4SlSZaCSfY2tA.png","bounding_box":{"width":16,"height":16}},"thumb":{"url":"http://s3.amazonaws.com/rapgenius/avatars/thumb/lXZtm1i4SlSZaCSfY2tA.png","bounding_box":{"width":32,"height":32}}},"id":135054,"role_for_display":null}}],"id":3833651},"featured_artists":[{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130}],"url":"http://genius.com/Migos-versace-lyrics","verified_annotations_by":[{"iq":1112.0,"name":"Migos","avatar":{"tiny":{"url":"http://images.rapgenius.com/avatars/tiny/95ce12cc798550dcd2539025a3cf1b57","bounding_box":{"width":16,"height":16}},"thumb":{"url":"http://images.rapgenius.com/avatars/thumb/95ce12cc798550dcd2539025a3cf1b57","bounding_box":{"width":32,"height":32}}},"id":938958,"role_for_display":"verified_artist"}],"id":176872,"media":[{"type":"audio","provider":"soundcloud","url":"https://soundcloud.com/octobersveryown/migos-versace-feat-drake"},{"type":"video","provider":"youtube","url":"http://www.youtube.com/watch?v=OmHW9IzZYzU"}],"tracking_paths":{"concurrent":"/Migos-versace-lyrics","aggregate":"/Migos-versace-lyrics"},"stats":{"pageviews":2159953,"hot":false}}},"meta":{"status":200}}'
+    http_version: 
+  recorded_at: Mon, 12 Jan 2015 21:11:56 GMT
+- request:
+    method: get
+    uri: https://api.rapgenius.com/referents/bahahaha?text_format=dom,plain
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - rapgenius.rb v1.0.4
   response:
     status:
       code: 404
       message: Not Found
     headers:
-      Cache-Control:
-      - no-cache
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 01 Feb 2014 22:02:03 GMT
-      Server:
-      - nginx/1.4.1
-      Status:
-      - 404 Not Found
-      X-Runtime:
-      - '4'
-      Content-Length:
-      - '49'
       Connection:
       - keep-alive
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Jan 2015 21:11:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '49'
+      Status:
+      - 404 Not Found
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Headers:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Type,
+        Accept, X-Auth-Token
+      X-Runtime:
+      - '5'
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"meta":{"status":404,"message":"404 Not Found"}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:02:16 GMT
+  recorded_at: Mon, 12 Jan 2015 21:11:56 GMT
 recorded_with: VCR 2.5.0

@@ -2,267 +2,267 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.rapgenius.com/artists/130/songs
+    uri: https://api.rapgenius.com/artists/130?text_format=dom,plain
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - rapgenius.rb v1.0.0
+      - rapgenius.rb v1.0.4
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private, max-age=0, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Mon, 27 Jan 2014 22:10:14 GMT
-      Etag:
-      - '"d41131ec03f64d6149aac44dfb2760e9"'
-      Server:
-      - nginx/1.4.1
-      Status:
-      - 200 OK
-      X-Runtime:
-      - '75'
-      Content-Length:
-      - '9073'
       Connection:
       - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"response":{"songs":[{"updated_by_human_at":1379540523,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"2011
-        Juno Awards In Toronto","stats":{"hot":false,"pageviews":1522},"annotation_count":3,"verified_annotation_count":0,"id":214614},{"updated_by_human_at":1390693486,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":44,"title":"All
-        Me","stats":{"concurrents":17,"hot":false,"pageviews":2201501},"annotation_count":87,"verified_annotation_count":2,"id":196551},{"updated_by_human_at":1388340209,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":3,"title":"Trust
-        Issues","stats":{"concurrents":4,"hot":false,"pageviews":241283},"annotation_count":34,"verified_annotation_count":0,"id":51360},{"updated_by_human_at":1385440338,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":3,"title":"Fireworks","stats":{"hot":false,"pageviews":150860},"annotation_count":46,"verified_annotation_count":0,"id":581},{"updated_by_human_at":1390541756,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":2,"title":"Over","stats":{"concurrents":3,"hot":false,"pageviews":238363},"annotation_count":36,"verified_annotation_count":0,"id":322},{"updated_by_human_at":1365880220,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Make
-        Things Right","stats":{"hot":false,"pageviews":5316},"annotation_count":19,"verified_annotation_count":0,"id":18066},{"updated_by_human_at":1387865621,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Come
-        Winter","stats":{"hot":false,"pageviews":24311},"annotation_count":53,"verified_annotation_count":0,"id":3100},{"updated_by_human_at":1365880200,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Thrill
-        Is Gone","stats":{"hot":false,"pageviews":6631},"annotation_count":40,"verified_annotation_count":0,"id":5168},{"updated_by_human_at":1389646403,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Try
-        Harder","stats":{"hot":false,"pageviews":5467},"annotation_count":20,"verified_annotation_count":0,"id":5166},{"updated_by_human_at":1378658552,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Mardi
-        Gras","stats":{"hot":false,"pageviews":7993},"annotation_count":14,"verified_annotation_count":0,"id":51146},{"updated_by_human_at":1390142872,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":10,"title":"The
-        Real Her","stats":{"concurrents":4,"hot":false,"pageviews":771087},"annotation_count":33,"verified_annotation_count":0,"id":55599},{"updated_by_human_at":1373263543,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Closer","stats":{"hot":false,"pageviews":43059},"annotation_count":62,"verified_annotation_count":0,"id":2387},{"updated_by_human_at":1365881919,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"The
-        Last Hope","stats":{"hot":false,"pageviews":8782},"annotation_count":33,"verified_annotation_count":0,"id":2517},{"updated_by_human_at":1381595863,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":2,"title":"Apology
-        for Autism Line","stats":{"hot":false,"pageviews":2416},"annotation_count":5,"verified_annotation_count":0,"id":193900},{"updated_by_human_at":1390492881,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"ATF
-        Radio freestyle","stats":{"hot":false,"pageviews":1153},"annotation_count":4,"verified_annotation_count":0,"id":68366},{"updated_by_human_at":1319586959,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Baby
-        Come With Me","stats":{"hot":false,"pageviews":10307},"annotation_count":9,"verified_annotation_count":0,"id":49098},{"updated_by_human_at":1362028629,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":2,"title":"Bag
-        Jackin Bitches","stats":{"hot":false,"pageviews":8207},"annotation_count":13,"verified_annotation_count":0,"id":57290},{"updated_by_human_at":1390366196,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":22,"title":"Bar
-        Mitzvah in 1999","stats":{"hot":false,"pageviews":6831},"annotation_count":15,"verified_annotation_count":0,"id":343015},{"updated_by_human_at":1389120705,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":1,"title":"Beautiful
-        Music","stats":{"hot":false,"pageviews":9734},"annotation_count":46,"verified_annotation_count":0,"id":1182},{"updated_by_human_at":1367805550,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Best
-        Friend","stats":{"hot":false,"pageviews":60273},"annotation_count":21,"verified_annotation_count":0,"id":65768},{"updated_by_human_at":1390470282,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":10,"title":"All
-        Of The Lights (Remix)","stats":{"hot":false,"pageviews":105441},"annotation_count":63,"verified_annotation_count":0,"id":5437},{"updated_by_human_at":1385869096,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":4,"title":"We''ll
-        Be Fine","stats":{"hot":false,"pageviews":495839},"annotation_count":26,"verified_annotation_count":0,"id":58341},{"updated_by_human_at":1355518523,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"We''ll
-        be Fine (French Version)","stats":{"hot":false,"pageviews":1838},"annotation_count":15,"verified_annotation_count":0,"id":87595},{"updated_by_human_at":1389119873,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Good
-        Riddance (Aristo Diss)","stats":{"hot":false,"pageviews":14695},"annotation_count":30,"verified_annotation_count":0,"id":51974},{"updated_by_human_at":1372025575,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"title":"Bitch
-        Is Crazy","stats":{"hot":false,"pageviews":12069},"annotation_count":8,"verified_annotation_count":0,"id":18051}]},"meta":{"status":200}}'
-    http_version: 
-  recorded_at: Mon, 27 Jan 2014 22:10:14 GMT
-- request:
-    method: get
-    uri: https://api.rapgenius.com/artists/130/songs/?page=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - rapgenius.rb v1.0.0
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Cache-Control:
-      - private, max-age=0, must-revalidate
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Jan 2015 21:09:43 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Sat, 01 Feb 2014 22:05:04 GMT
-      Etag:
-      - '"f1b4a295d5d198ed2cdbaa73b7ec3bce"'
-      Server:
-      - nginx/1.4.1
+      Content-Length:
+      - '4137'
       Status:
       - 200 OK
-      X-Runtime:
-      - '28'
-      Content-Length:
-      - '9057'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: '{"response":{"songs":[{"annotation_count":3,"verified_annotation_count":0,"title":"2011
-        Juno Awards In Toronto","updated_by_human_at":1379540523,"stats":{"pageviews":1555,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":214614},{"annotation_count":87,"verified_annotation_count":2,"title":"All
-        Me","updated_by_human_at":1390693486,"stats":{"pageviews":2227313,"concurrents":10,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":91,"id":196551},{"annotation_count":34,"verified_annotation_count":0,"title":"Trust
-        Issues","updated_by_human_at":1388340209,"stats":{"pageviews":243167,"concurrents":2,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":3,"id":51360},{"annotation_count":48,"verified_annotation_count":0,"title":"Fireworks","updated_by_human_at":1391017451,"stats":{"pageviews":151973,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":5,"id":581},{"annotation_count":37,"verified_annotation_count":0,"title":"Over","updated_by_human_at":1391017866,"stats":{"pageviews":239859,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":4,"id":322},{"annotation_count":19,"verified_annotation_count":0,"title":"Make
-        Things Right","updated_by_human_at":1365880220,"stats":{"pageviews":5346,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":18066},{"annotation_count":53,"verified_annotation_count":0,"title":"Come
-        Winter","updated_by_human_at":1387865621,"stats":{"pageviews":24503,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":3100},{"annotation_count":40,"verified_annotation_count":0,"title":"Thrill
-        Is Gone","updated_by_human_at":1365880200,"stats":{"pageviews":6667,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":5168},{"annotation_count":20,"verified_annotation_count":0,"title":"Try
-        Harder","updated_by_human_at":1389646403,"stats":{"pageviews":5516,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":5166},{"annotation_count":14,"verified_annotation_count":0,"title":"Mardi
-        Gras","updated_by_human_at":1378658552,"stats":{"pageviews":8053,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":51146},{"annotation_count":33,"verified_annotation_count":0,"title":"The
-        Real Her","updated_by_human_at":1390142872,"stats":{"pageviews":773942,"concurrents":2,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":12,"id":55599},{"annotation_count":62,"verified_annotation_count":0,"title":"Closer","updated_by_human_at":1373263543,"stats":{"pageviews":43447,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":2387},{"annotation_count":33,"verified_annotation_count":0,"title":"The
-        Last Hope","updated_by_human_at":1365881919,"stats":{"pageviews":8859,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":2517},{"annotation_count":5,"verified_annotation_count":0,"title":"Apology
-        for Autism Line","updated_by_human_at":1381595863,"stats":{"pageviews":2450,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":2,"id":193900},{"annotation_count":4,"verified_annotation_count":0,"title":"ATF
-        Radio freestyle","updated_by_human_at":1390492881,"stats":{"pageviews":1175,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":68366},{"annotation_count":9,"verified_annotation_count":0,"title":"Baby
-        Come With Me","updated_by_human_at":1319586959,"stats":{"pageviews":10366,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":49098},{"annotation_count":13,"verified_annotation_count":0,"title":"Bag
-        Jackin Bitches","updated_by_human_at":1362028629,"stats":{"pageviews":8229,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":2,"id":57290},{"annotation_count":15,"verified_annotation_count":0,"title":"Bar
-        Mitzvah in 1999","updated_by_human_at":1390924453,"stats":{"pageviews":7247,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":23,"id":343015},{"annotation_count":46,"verified_annotation_count":0,"title":"Beautiful
-        Music","updated_by_human_at":1389120705,"stats":{"pageviews":9796,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":1,"id":1182},{"annotation_count":21,"verified_annotation_count":0,"title":"Best
-        Friend","updated_by_human_at":1367805550,"stats":{"pageviews":60573,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":65768},{"annotation_count":63,"verified_annotation_count":0,"title":"All
-        Of The Lights (Remix)","updated_by_human_at":1390470282,"stats":{"pageviews":105990,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":10,"id":5437},{"annotation_count":26,"verified_annotation_count":0,"title":"We''ll
-        Be Fine","updated_by_human_at":1385869096,"stats":{"pageviews":497353,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":5,"id":58341},{"annotation_count":15,"verified_annotation_count":0,"title":"We''ll
-        be Fine (French Version)","updated_by_human_at":1355518523,"stats":{"pageviews":1844,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":87595},{"annotation_count":30,"verified_annotation_count":0,"title":"Good
-        Riddance (Aristo Diss)","updated_by_human_at":1389119873,"stats":{"pageviews":14827,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":51974},{"annotation_count":8,"verified_annotation_count":0,"title":"Bitch
-        Is Crazy","updated_by_human_at":1372025575,"stats":{"pageviews":12161,"hot":false},"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"pyongs_count":null,"id":18051}]},"meta":{"status":200}}'
-    http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:05:17 GMT
-- request:
-    method: get
-    uri: https://api.rapgenius.com/artists/130
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - rapgenius.rb v1.0.0
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
       Cache-Control:
       - private, max-age=0, must-revalidate
-      Content-Type:
-      - application/json; charset=utf-8
-      Date:
-      - Sat, 01 Feb 2014 22:05:07 GMT
+      Access-Control-Allow-Credentials:
+      - 'false'
       Etag:
-      - '"2677ffefc8fdd2c0efa9fbf1e2b70c2b"'
-      Server:
-      - nginx/1.4.1
-      Status:
-      - 200 OK
+      - '"6c3d3804d2b16b894f2e653d7800a47f"'
+      Access-Control-Allow-Headers:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Type,
+        Accept, X-Auth-Token
       X-Runtime:
-      - '9'
-      Content-Length:
-      - '2620'
-      Connection:
-      - keep-alive
+      - '187'
+      Access-Control-Allow-Origin:
+      - '*'
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"response":{"artist":{"description":{"dom":{"tag":"root","children":[{"tag":"p","children":["Drake
-        is part of a generation of new rappers, along with ",{"tag":"a","attributes":{"href":"http://rapgenius.com/artists/Wiz-khalifa"},"children":["Wiz
-        Khalifa"]},", ",{"tag":"a","attributes":{"href":"http://rapgenius.com/artists/Kid-cudi"},"children":["Kid
+        is part of a generation of new rappers, along with ",{"tag":"a","data":{"api_path":"/artists/310"},"attributes":{"href":"http://genius.com/artists/Wiz-khalifa"},"children":["Wiz
+        Khalifa"]},", ",{"tag":"a","data":{"api_path":"/artists/68"},"attributes":{"href":"http://genius.com/artists/Kid-cudi"},"children":["Kid
         Cudi"]}," and others, who came up through internet mixtapes. Drizzy put out
         three mixtapes from 2006 to 2009. These mixtapes got him the attention of
-        ",{"tag":"a","attributes":{"href":"http://rapgenius.com/artists/Lil-wayne"},"children":["Lil
-        Wayne"]},", and spawned the hit singles ",{"tag":"a","attributes":{"href":"http://rapgenius.com/lyrics/Drake-ft-eminem-kanye-west-and-lil-wayne/Forever"},"data":{"api_path":"/songs/147"},"children":["\u201cForever\u201d"]},"
-        and ",{"tag":"a","attributes":{"href":"http://rapgenius.com/lyrics/Drake/Best-i-ever-had"},"data":{"api_path":"/songs/672"},"children":["\u201cBest
-        I Ever Had.\u201d"]}," During this period, Drake also made a slew of guest
-        appearances on tracks by artists from ",{"tag":"a","attributes":{"href":"http://rapgenius.com/lyrics/Dj-khaled-ft-drake-lil-wayne-rick-ross-usher-and-young-jeezy/Fed-up"},"data":{"api_path":"/songs/2687"},"children":["DJ
-        Khaled"]}," to ",{"tag":"a","attributes":{"href":"http://rapgenius.com/lyrics/Jay-z-ft-drake/Off-that"},"data":{"api_path":"/songs/674"},"children":["Jay-Z"]}]},"",{"tag":"p","children":["After
+        ",{"tag":"a","data":{"api_path":"/artists/4"},"attributes":{"href":"http://genius.com/artists/Lil-wayne"},"children":["Lil
+        Wayne"]},", and spawned the hit singles ",{"tag":"a","data":{"api_path":"/songs/147"},"attributes":{"href":"http://genius.com/lyrics/Drake-ft-eminem-kanye-west-and-lil-wayne/Forever"},"children":["\u201cForever\u201d"]},"
+        and ",{"tag":"a","data":{"api_path":"/songs/672"},"attributes":{"href":"http://genius.com/lyrics/Drake/Best-i-ever-had"},"children":["\u201cBest
+        I Ever Had.\u201d"]},", the latter coming from his critically acclaimed mixtape
+        ",{"tag":"a","attributes":{"href":"http://genius.com/albums/Drake/So-far-gone"},"children":[{"tag":"em","children":["So
+        Far Gone"]}]},". During this period, Drake also made a slew of guest appearances
+        on tracks by artists from ",{"tag":"a","data":{"api_path":"/songs/2687"},"attributes":{"href":"http://genius.com/lyrics/Dj-khaled-ft-drake-lil-wayne-rick-ross-usher-and-young-jeezy/Fed-up"},"children":["DJ
+        Khaled"]}," to ",{"tag":"a","data":{"api_path":"/songs/674"},"attributes":{"href":"http://genius.com/lyrics/Jay-z-ft-drake/Off-that"},"children":["Jay-Z"]}]},"",{"tag":"p","children":["After
         years without a record deal, Drake finally signed to Lil Wayne\u2019s Young
         Money Entertainment label in 2009. And in 2010, Drake released his debut album
-        ",{"tag":"a","attributes":{"href":"http://rapgenius.com/posts/Drake-thank-me-later-all-the-lyrics-to-every-song-explained"},"children":[{"tag":"em","children":["Thank
-        Me Later"]}]}," to critical acclaim. His second album, ",{"tag":"em","children":[{"tag":"a","attributes":{"href":"http://rapgenius.com/albums/Drake/Take-care"},"children":["Take
+        ",{"tag":"a","attributes":{"href":"http://genius.com/posts/Drake-thank-me-later-all-the-lyrics-to-every-song-explained"},"children":[{"tag":"em","children":["Thank
+        Me Later"]}]}," to critical acclaim. His second album, ",{"tag":"em","children":[{"tag":"a","attributes":{"href":"http://genius.com/albums/Drake/Take-care"},"children":["Take
         Care"]}]},", dropped in November 2011 and ",{"tag":"a","attributes":{"href":"http://www.youtube.com/watch?v=5s5dLSu3pyc","rel":"nofollow"},"children":["celebrated"]},"
         with his crew for earning his first Grammy Award (for Best Rap Album) for
-        the album. His third project ",{"tag":"em","children":[{"tag":"a","attributes":{"href":"http://rapgenius.com/albums/Drake/Nothing-was-the-same"},"children":["Nothing
-        Was The Same"]}]}," was released September 24th, 2013."]}]}},"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","user":null,"url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130}},"meta":{"status":200}}'
+        the album. His third project ",{"tag":"em","children":[{"tag":"a","attributes":{"href":"http://genius.com/albums/Drake/Nothing-was-the-same"},"children":["Nothing
+        Was The Same"]}]}," was released September 24th, 2013."]},"",{"tag":"ul","children":[{"tag":"li","children":[{"tag":"a","data":{"api_path":"/songs/391645"},"attributes":{"href":"http://genius.com/Clips-genius-drake-lyrics"},"children":["Music
+        Videos of the artist"]}]},""]}]},"plain":"Drake is part of a generation of
+        new rappers, along with Wiz Khalifa, Kid Cudi and others, who came up through
+        internet mixtapes. Drizzy put out three mixtapes from 2006 to 2009. These
+        mixtapes got him the attention of Lil Wayne, and spawned the hit singles \u201cForever\u201d
+        and \u201cBest I Ever Had.\u201d, the latter coming from his critically acclaimed
+        mixtape So Far Gone. During this period, Drake also made a slew of guest appearances
+        on tracks by artists from DJ Khaled to Jay-Z\n\nAfter years without a record
+        deal, Drake finally signed to Lil Wayne\u2019s Young Money Entertainment label
+        in 2009. And in 2010, Drake released his debut album Thank Me Later to critical
+        acclaim. His second album, Take Care, dropped in November 2011 and celebrated
+        with his crew for earning his first Grammy Award (for Best Rap Album) for
+        the album. His third project Nothing Was The Same was released September 24th,
+        2013.\n\n\nMusic Videos of the artist"},"tracking_paths":{"aggregate":"/artists/Drake","concurrent":"/artists/Drake"},"user":null,"url":"http://genius.com/artists/Drake","name":"Drake","id":130,"image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif"}},"meta":{"status":200}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:05:20 GMT
+  recorded_at: Mon, 12 Jan 2015 21:09:43 GMT
 - request:
     method: get
-    uri: https://api.rapgenius.com/artists/130/songs/?page=3
+    uri: https://api.rapgenius.com/artists/130/songs/?page=1&text_format=dom,plain
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - rapgenius.rb v1.0.0
+      - rapgenius.rb v1.0.4
   response:
     status:
       code: 200
       message: OK
     headers:
-      Cache-Control:
-      - private, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Jan 2015 21:11:51 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Sat, 01 Feb 2014 22:05:08 GMT
-      Etag:
-      - '"7279da41bd6d9d30263a9860e6b7d274"'
-      Server:
-      - nginx/1.4.1
+      Content-Length:
+      - '6297'
       Status:
       - 200 OK
       X-Runtime:
-      - '24'
-      Content-Length:
-      - '8897'
-      Connection:
-      - keep-alive
+      - '182'
+      Access-Control-Allow-Headers:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Type,
+        Accept, X-Auth-Token
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Etag:
+      - '"76c34401883857c8d1448b0f9ff00aad"'
+      Access-Control-Allow-Origin:
+      - '*'
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"response":{"songs":[{"verified_annotation_count":0,"title":"Started
-        From The Bottom Remix","updated_by_human_at":1364255261,"stats":{"hot":false,"pageviews":2304},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":124287},{"verified_annotation_count":0,"title":"Make
-        Daddy Proud","updated_by_human_at":1384388317,"stats":{"hot":false,"pageviews":51050},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":14,"id":112209},{"verified_annotation_count":0,"title":"Brand
-        New","updated_by_human_at":1378436149,"stats":{"hot":false,"pageviews":51160},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":17,"id":4090},{"verified_annotation_count":0,"title":"Sooner
-        Than Later","updated_by_human_at":1386470270,"stats":{"hot":false,"pageviews":59638},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":23,"id":3571},{"verified_annotation_count":0,"title":"Video
-        Girl","updated_by_human_at":1388864391,"stats":{"hot":false,"pageviews":6752},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":35,"id":5033},{"verified_annotation_count":0,"title":"Deceiving","updated_by_human_at":1389554612,"stats":{"hot":false,"pageviews":22461},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":40,"id":2612},{"verified_annotation_count":0,"title":"Del
-        it","updated_by_human_at":1379306887,"stats":{"hot":false},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":18073},{"verified_annotation_count":0,"title":"Heat
-        of the Moment","updated_by_human_at":1387829987,"stats":{"hot":false,"pageviews":10401},"pyongs_count":3,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":2,"id":240199},{"verified_annotation_count":0,"title":"Jodeci
-        Freestyle","updated_by_human_at":1388490984,"stats":{"hot":false,"pageviews":264990},"pyongs_count":7,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":72,"id":176774},{"verified_annotation_count":0,"title":"305
-        to My City","updated_by_human_at":1388338117,"stats":{"hot":false,"pageviews":548250,"concurrents":2},"pyongs_count":14,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":26,"id":217281},{"verified_annotation_count":0,"title":"Worst
-        Behavior","updated_by_human_at":1390912607,"stats":{"hot":false,"pageviews":1067934,"concurrents":17},"pyongs_count":72,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":35,"id":217266},{"verified_annotation_count":0,"title":"Fear","updated_by_human_at":1390537543,"stats":{"hot":false,"pageviews":123699},"pyongs_count":3,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":50,"id":842},{"verified_annotation_count":0,"title":"Asthma
-        Team","updated_by_human_at":1365881377,"stats":{"hot":false,"pageviews":10543},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":34,"id":2931},{"verified_annotation_count":0,"title":"November
-        18th","updated_by_human_at":1388234269,"stats":{"hot":false,"pageviews":108843},"pyongs_count":4,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":31,"id":2497},{"verified_annotation_count":0,"title":"Intro
-        (Room For Improvement)","updated_by_human_at":1389127438,"stats":{"hot":false},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":333532},{"verified_annotation_count":0,"title":"Dlt
-        it","updated_by_human_at":1318012909,"stats":{"hot":false},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":56664},{"verified_annotation_count":0,"title":"Do
-        It All","updated_by_human_at":1319046997,"stats":{"hot":false,"pageviews":24927},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":45,"id":841},{"verified_annotation_count":0,"title":"Do
-        It Now","updated_by_human_at":1319607562,"stats":{"hot":false,"pageviews":11286},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":30,"id":49497},{"verified_annotation_count":0,"title":"Do
-        What U Do","updated_by_human_at":1391218540,"stats":{"hot":false},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":6,"id":146202},{"verified_annotation_count":0,"title":"My
-        team","updated_by_human_at":1387778187,"stats":{"hot":false},"pyongs_count":null,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":314025},{"verified_annotation_count":0,"title":"Cameras","updated_by_human_at":1389284431,"stats":{"hot":false,"pageviews":511965,"concurrents":3},"pyongs_count":6,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":27,"id":58342},{"verified_annotation_count":0,"title":"Good
-        Ones Go (Interlude)","updated_by_human_at":1383495627,"stats":{"hot":false,"pageviews":391108},"pyongs_count":3,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":12,"id":58665},{"verified_annotation_count":0,"title":"Practice","updated_by_human_at":1391189866,"stats":{"hot":false,"pageviews":431083,"concurrents":2},"pyongs_count":5,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":21,"id":58346},{"verified_annotation_count":0,"title":"Worst
-        behaviour","updated_by_human_at":1389185142,"stats":{"hot":false},"pyongs_count":12,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":334106},{"verified_annotation_count":0,"title":"Versace","updated_by_human_at":1383970164,"stats":{"hot":false},"pyongs_count":1,"primary_artist":{"image_url":"http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif","url":"http://rapgenius.com/artists/Drake","name":"Drake","id":130},"annotation_count":0,"id":257833}]},"meta":{"status":200}}'
+      string: '{"response":{"songs":[{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"0
+        to 100/The Catch Up","lyrics_updated_at":1415380761,"updated_by_human_at":1419443785,"annotation_count":1,"pyongs_count":2311,"id":156640},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"1Xtra
+        Freestyle","lyrics_updated_at":1415987388,"updated_by_human_at":1415987413,"annotation_count":1,"pyongs_count":9,"id":421444},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"2011
+        Juno Awards In Toronto","lyrics_updated_at":0,"updated_by_human_at":1396726815,"annotation_count":1,"pyongs_count":2,"id":214614},{"primary_artist":{"url":"http://genius.com/artists/Ob-obrien","name":"OB
+        O''Brien","image_url":"http://images.rapgenius.com/23c67850bbbe8050d0cf1000e4513341.310x311x1.jpg","id":24661},"title":"2
+        On/Thotful","lyrics_updated_at":1418604267,"updated_by_human_at":1418604267,"annotation_count":1,"pyongs_count":245,"id":427679},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"305
+        to My City","lyrics_updated_at":0,"updated_by_human_at":1414590255,"annotation_count":1,"pyongs_count":68,"id":217281},{"primary_artist":{"url":"http://genius.com/artists/Birdman","name":"Birdman","image_url":"http://images.rapgenius.com/18d7dff22dd87895d04b8b91113cce6d.670x380x1.jpg","id":86},"title":"4
+        My Town","lyrics_updated_at":0,"updated_by_human_at":1399167281,"annotation_count":1,"pyongs_count":11,"id":481},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"5AM
+        in Toronto","lyrics_updated_at":1413656472,"updated_by_human_at":1417149933,"annotation_count":1,"pyongs_count":61,"id":124418},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"6
+        God","lyrics_updated_at":1419796565,"updated_by_human_at":1420291958,"annotation_count":1,"pyongs_count":457,"id":500858},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"9am
+        in Dallas","lyrics_updated_at":1402005552,"updated_by_human_at":1416035906,"annotation_count":1,"pyongs_count":28,"id":514},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"About
+        The Game","lyrics_updated_at":0,"updated_by_human_at":1389903744,"annotation_count":1,"pyongs_count":5,"id":201539},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"A
+        Little Favour","lyrics_updated_at":0,"updated_by_human_at":1388851406,"annotation_count":1,"pyongs_count":1,"id":71058},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"A
+        Little Favour (GQ Freestyle)","lyrics_updated_at":0,"updated_by_human_at":1410042413,"annotation_count":1,"pyongs_count":2,"id":68760},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"All
+        Me","lyrics_updated_at":1399303015,"updated_by_human_at":1416554424,"annotation_count":1,"pyongs_count":438,"id":196551},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"All
+        Night Long (Miss Me Demo)","lyrics_updated_at":0,"updated_by_human_at":1375358824,"annotation_count":1,"pyongs_count":2,"id":114010},{"primary_artist":{"url":"http://genius.com/artists/Kanye-west","name":"Kanye
+        West","image_url":"http://images.rapgenius.com/538ed90e5af5d56c9558e44c0e8ad17c.715x444x1.jpg","id":72},"title":"All
+        of the Lights","lyrics_updated_at":1394195304,"updated_by_human_at":1415492854,"annotation_count":1,"pyongs_count":93,"id":1781},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"All
+        Of The Lights (Remix)","lyrics_updated_at":1414122943,"updated_by_human_at":1414122943,"annotation_count":1,"pyongs_count":21,"id":5437},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"All
+        This Love","lyrics_updated_at":1396840499,"updated_by_human_at":1398397541,"annotation_count":1,"pyongs_count":null,"id":18064},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"All
+        White","lyrics_updated_at":1419458169,"updated_by_human_at":1419458169,"annotation_count":1,"pyongs_count":16,"id":515863},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"title":"AM
+        2 PM","lyrics_updated_at":1397669037,"updated_by_human_at":1416941167,"annotation_count":1,"pyongs_count":4,"id":2751},{"primary_artist":{"url":"http://genius.com/artists/Meek-mill","name":"Meek
+        Mill","image_url":"http://s3.amazonaws.com/rapgenius/1373656023_meekmill.jpg","id":1319},"title":"Amen","lyrics_updated_at":1420508932,"updated_by_human_at":1420508931,"annotation_count":1,"pyongs_count":36,"id":73301}]},"meta":{"status":200}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:05:20 GMT
+  recorded_at: Mon, 12 Jan 2015 21:11:52 GMT
 - request:
     method: get
-    uri: https://api.rapgenius.com/artists/bahahaha
+    uri: https://api.rapgenius.com/artists/130/songs/?page=3&text_format=dom,plain
     body:
       encoding: US-ASCII
       string: ''
     headers:
       User-Agent:
-      - rapgenius.rb v1.0.0
+      - rapgenius.rb v1.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Jan 2015 21:11:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '6157'
+      Status:
+      - 200 OK
+      X-Runtime:
+      - '158'
+      Access-Control-Allow-Headers:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Type,
+        Accept, X-Auth-Token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Cache-Control:
+      - private, max-age=0, must-revalidate
+      Access-Control-Allow-Origin:
+      - '*'
+      Etag:
+      - '"15994ffad3b4c08d314072d5bc954d6d"'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"response":{"songs":[{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Best
+        I Ever Had (Remix)","pyongs_count":9,"lyrics_updated_at":1420775896,"updated_by_human_at":1420775895,"id":74017},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Between
+        Us","pyongs_count":3,"lyrics_updated_at":1404096603,"updated_by_human_at":1404099194,"id":81686},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Bibb
+        City","pyongs_count":null,"lyrics_updated_at":1414785373,"updated_by_human_at":1414785372,"id":561120},{"primary_artist":{"url":"http://genius.com/artists/Amariemowatt","name":"AmarieMowatt","image_url":null,"id":65441},"annotation_count":1,"title":"BitchA$$","pyongs_count":3,"lyrics_updated_at":1404445838,"updated_by_human_at":1409845525,"id":364059},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Bitch
+        Is Crazy","pyongs_count":null,"lyrics_updated_at":0,"updated_by_human_at":1372025575,"id":18051},{"primary_artist":{"url":"http://genius.com/artists/Jd-era","name":"JD
+        Era","image_url":"http://images.rapgenius.com/ee9a3e5cf96631d720c3e3c9c9a82198.600x897x1.jpg","id":12377},"annotation_count":1,"title":"Black
+        Magic","pyongs_count":1,"lyrics_updated_at":1417767810,"updated_by_human_at":1417767810,"id":72141},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Bollywood
+        Flow","pyongs_count":4,"lyrics_updated_at":0,"updated_by_human_at":1414631334,"id":3279},{"primary_artist":{"url":"http://genius.com/artists/Kaycee","name":"Kaycee","image_url":null,"id":72208},"annotation_count":1,"title":"Bossin
+        freestyle","pyongs_count":1,"lyrics_updated_at":0,"updated_by_human_at":1379579945,"id":220579},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Brand
+        New","pyongs_count":10,"lyrics_updated_at":0,"updated_by_human_at":1397771023,"id":4090},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Brand
+        New (Remix)","pyongs_count":2,"lyrics_updated_at":1414649247,"updated_by_human_at":1415238937,"id":92761},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Bria''s
+        Interlude","pyongs_count":15,"lyrics_updated_at":1393611894,"updated_by_human_at":1393611894,"id":4815},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Buried
+        Alive (Interlude)","pyongs_count":70,"lyrics_updated_at":1420603522,"updated_by_human_at":1420603522,"id":55602},{"primary_artist":{"url":"http://genius.com/artists/Justin-timberlake","name":"Justin
+        Timberlake","image_url":"http://s3.amazonaws.com/rapgenius/jt_givenchy_575.jpg","id":334},"annotation_count":1,"title":"Cabaret","pyongs_count":21,"lyrics_updated_at":1420774620,"updated_by_human_at":1420774619,"id":224193},{"primary_artist":{"url":"http://genius.com/artists/French-montana","name":"French
+        Montana","image_url":"http://s3.amazonaws.com/rapgenius/FrenchBear.jpg","id":1583},"annotation_count":1,"title":"Call
+        Me Montana","pyongs_count":3,"lyrics_updated_at":1397780722,"updated_by_human_at":1397780722,"id":57410},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Cameras","pyongs_count":40,"lyrics_updated_at":1418089786,"updated_by_human_at":1418089786,"id":58342},{"primary_artist":{"url":"http://genius.com/artists/Colin-munroe","name":"Colin
+        Munroe","image_url":"http://images.rapgenius.com/409dd5c72fe5f27d0deb826e69967cf1.473x473x1.jpg","id":1515},"annotation_count":1,"title":"Cannon
+        Ball","pyongs_count":null,"lyrics_updated_at":1405316489,"updated_by_human_at":1405316489,"id":32129},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Can''t
+        Hide From Love Freestyle","pyongs_count":null,"lyrics_updated_at":1412713649,"updated_by_human_at":1412713649,"id":81757},{"primary_artist":{"url":"http://genius.com/artists/Drake","name":"Drake","image_url":"http://images.rapgenius.com/6e996fe91d484c626f1b36686cb27d7c.450x253x70.gif","id":130},"annotation_count":1,"title":"Cece''s
+        Interlude","pyongs_count":9,"lyrics_updated_at":1405787127,"updated_by_human_at":1405787127,"id":4802},{"primary_artist":{"url":"http://genius.com/artists/Tank","name":"Tank","image_url":"http://s3.amazonaws.com/rapgenius/tank-11222010.jpg","id":1057},"annotation_count":1,"title":"Celebration","pyongs_count":null,"lyrics_updated_at":1398138831,"updated_by_human_at":1403774909,"id":32142},{"primary_artist":{"url":"http://genius.com/artists/Nicki-minaj","name":"Nicki
+        Minaj","image_url":"http://images.rapgenius.com/d499b6bfc572b1543d6ac4a8469bac24.605x610x1.png","id":92},"annotation_count":1,"title":"Champion","pyongs_count":16,"lyrics_updated_at":1415555301,"updated_by_human_at":1417018204,"id":69579}]},"meta":{"status":200}}'
+    http_version: 
+  recorded_at: Mon, 12 Jan 2015 21:11:52 GMT
+- request:
+    method: get
+    uri: https://api.rapgenius.com/artists/bahahaha?text_format=dom,plain
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - rapgenius.rb v1.0.4
   response:
     status:
       code: 404
       message: Not Found
     headers:
-      Cache-Control:
-      - no-cache
+      Connection:
+      - keep-alive
+      Server:
+      - nginx
+      Date:
+      - Mon, 12 Jan 2015 21:11:53 GMT
       Content-Type:
       - application/json; charset=utf-8
-      Date:
-      - Sat, 01 Feb 2014 22:05:08 GMT
-      Server:
-      - nginx/1.4.1
+      Content-Length:
+      - '49'
       Status:
       - 404 Not Found
       X-Runtime:
-      - '9'
-      Content-Length:
-      - '49'
-      Connection:
-      - keep-alive
+      - '3'
+      Cache-Control:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'false'
+      Access-Control-Allow-Headers:
+      - Origin, Access-Control-Request-Method, Access-Control-Request-Headers, Content-Type,
+        Accept, X-Auth-Token
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"meta":{"status":404,"message":"404 Not Found"}}'
     http_version: 
-  recorded_at: Sat, 01 Feb 2014 22:05:21 GMT
+  recorded_at: Mon, 12 Jan 2015 21:11:53 GMT
 recorded_with: VCR 2.5.0

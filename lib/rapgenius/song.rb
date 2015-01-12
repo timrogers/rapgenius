@@ -60,9 +60,7 @@ module RapGenius
     end
 
     def description
-      @description ||= document["response"]["song"]["description"]["dom"]["children"].map do |node|
-        parse_description(node)
-      end.flatten.join("")
+      @description ||= document["response"]["song"]["description"]["plain"]
     end
 
     def images
@@ -95,7 +93,7 @@ module RapGenius
     end
 
     def media
-      response["media"].map do |m| 
+      response["media"].map do |m|
         Media.new(type: m["type"], provider: m["provider"], url: m["url"])
       end
     end

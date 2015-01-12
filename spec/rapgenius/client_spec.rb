@@ -30,7 +30,8 @@ module RapGenius
 
       context "with a failed request" do
         before do
-          stub_request(:get, "http://foo.bar").to_return({body: '', status: 404})
+          stub_request(:get, "http://foo.bar").with(query: { text_format: "dom,plain" }).
+            to_return({body: '', status: 404})
         end
 
         it "raises a ScraperError" do

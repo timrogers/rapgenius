@@ -5,10 +5,10 @@ module RapGenius
     context "given Migos's Versace", vcr: { cassette_name: "song-176872" } do
       subject(:song) { described_class.find(176872) }
 
-      its(:url) { should eq "http://rapgenius.com/Migos-versace-lyrics" }
+      its(:url) { should eq "http://genius.com/Migos-versace-lyrics" }
       its(:title) { should eq "Versace" }
-  
-      its(:description) { should include "they absolutely killed it" }
+
+      its(:description) { should include "the song blew up" }
 
       context "#artist" do
         subject { song.artist }
@@ -32,7 +32,7 @@ module RapGenius
 
       context "#media" do
         subject { song.media }
-        its(:length) { should eq 3 }
+        its(:length) { should eq 2 }
         its(:first) { should be_a Media }
         its("first.provider") { should eq "soundcloud" }
       end
@@ -46,12 +46,12 @@ module RapGenius
         its("first.explanations.first") { should include "Versace used his verse in this runway show" }
       end
 
-      its(:images) { should include "http://images.rapgenius.com/2b3fa8326a5277fa31f2012a7b581e2e.500x319x11.gif" }
-      its(:pyongs) { should eq 30 }
+      its(:images) { should include "http://s3.amazonaws.com/rapgenius/Zaytoven_1-7-2011.jpg" }
+      its(:pyongs) { should eq 166 }
       its(:hot?) { should eq false }
-      its(:views) { should eq 1843565 }
-      its(:concurrent_viewers) { should eq 8 }
-    
+      its(:views) { should eq 2159953 }
+      its(:concurrent_viewers) { should be_nil }
+
 
       context "a non-existent song ID" do
         subject(:song) { described_class.find("bahahaha") }
