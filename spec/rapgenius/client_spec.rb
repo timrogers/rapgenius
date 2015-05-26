@@ -25,6 +25,21 @@ module RapGenius
       end
     end
 
+    describe '.access_token=' do
+      let(:access_token) { 'my-access-token' }
+
+      before do
+        RapGenius::Client.access_token = access_token
+        stub_request(:get, 'https://api.rapgenius.com/hello?text_format=dom,plain').
+          with(headers: {'Authorization' => "Bearer #{access_token}", 'User-Agent' => "rapgenius.rb v#{RapGenius::VERSION}"})
+      end
+
+      it 'should send the header' do
+        client.fetch('/hello')
+        assert_requested(:get, 'https://api.rapgenius.com/hello?text_format=dom,plain')
+      end
+    end
+
     describe "#document" do
       before { client.url = "http://foo.bar" }
 

@@ -2,12 +2,15 @@ require 'httparty'
 
 module RapGenius
   module Client
+    class << self
+      attr_accessor :access_token
+    end
+
     class HTTPClient
       include HTTParty
 
       format   :json
       base_uri 'https://api.rapgenius.com'
-      headers  'User-Agent' => "rapgenius.rb v#{RapGenius::VERSION}"
     end
 
     BASE_URL = HTTPClient.base_uri + "/".freeze
@@ -31,6 +34,9 @@ module RapGenius
     def fetch(url)
       response = HTTPClient.get(url, query: {
         text_format: "#{DOM_TEXT_FORMAT},#{PLAIN_TEXT_FORMAT}"
+      }, headers: {
+        'Authorization' => "Bearer #{RapGenius::Client.access_token}",
+        'User-Agent' => "rapgenius.rb v#{RapGenius::VERSION}"
       })
 
       if response.code != 200
