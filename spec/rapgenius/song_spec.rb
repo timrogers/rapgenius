@@ -37,15 +37,6 @@ module RapGenius
         its("first.provider") { should eq "soundcloud" }
       end
 
-      context "#lines" do
-        subject { song.lines }
-        its(:count) { should eq 81 }
-        its(:first) { should be_a Line }
-        its("first.id") { should eq "1983907" }
-        its("first.lyric") { should eq "[Verse 1: Drake]" }
-        its("first.explanations.first") { should include "Versace used his verse in this runway show" }
-      end
-
       its(:images) { should include "http://s3.amazonaws.com/rapgenius/Zaytoven_1-7-2011.jpg" }
       its(:pyongs) { should eq 166 }
       its(:hot?) { should eq false }
