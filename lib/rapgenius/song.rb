@@ -98,7 +98,34 @@ module RapGenius
       end
     end
 
+    def lines
+      @lines ||= response["lyrics"]["dom"]["children"].map do |node|
+        parse_lines(node)
+      end.flatten.compact
+    end
+
     private
+
+    def parse_lines(node)
+      if node.is_a?(Array)
+        node.map { |subnode| parse_lines(subnode) }
+      elsif node.is_a?(String)
+        Line.new(
+          song: Song.new(id: @id),
+          lyric: node
+        )
+      elsif node.is_a?(Hash) && node["tag"] == "p"
+        parse_lines(node["children"])
+      elsif node.is_a?(Hash) && node["tag"] == "a"
+        Line.new(
+          song: Song.new(id: @id),
+          lyric: node["children"].select {|l| l.is_a? String }.join("\n"),
+          id: node["data"]["id"]
+        )
+      else
+        return
+      end
+    end
 
     def keys_with_images
       %w{featured_artists producer_artists primary_artist}

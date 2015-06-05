@@ -83,6 +83,24 @@ song.description
 # => "Released in June 2013, not only did they take the beat from Soulja Boy’s OMG part 2 but they absolutely killed it."
 ```
 
+### Lines
+
+Once you've got a song, you can then go through its "lines", which includes
+annotated and unannotated parts of the content.
+
+```ruby
+line = song.lines[1]
+
+line.lyric
+# => Versace, Versace, Medusa head on me like I'm 'luminati
+
+line.annotations
+# => ["Read about how this collaboration came to pass here..."]
+
+line.song
+# => #<RapGenius::Song:0x007fccdba50a50 @id=176872...
+```
+
 ### Media
 
 Rap Genius provides great access to media like MP3s on Soundcloud or videos
