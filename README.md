@@ -1,15 +1,15 @@
 # rapgenius.rb
 
-![Rap Genius logo](http://f.cl.ly/items/303W0c1i2r100j2u3Y0y/Screen%20Shot%202013-08-17%20at%2016.01.19.png)
+![Rap Genius logo](http://assets.rapgenius.com/images/apple-touch-icon.png?1432674944)
 
 ## What does this do?
 
-It's a Ruby gem for accessing lyrics, artists and explanations on
-[Rap Genius](http://rapgenius.com).
+It's a Ruby gem for accessing songs, artists and annotations on
+[Genius](http://genius.com).
 
-In pre-1.0.0 versions, this gem used Nokogiri to scrape Rap Genius's pages,
-but no more. The new [Genius iOS app](http://rapgenius.com/static/app) uses
-a private API, which this gem makes use of.
+In pre-1.0.0 versions, this gem used Nokogiri to scrape Genius' pages,
+but no more thanks to the new [Genius API](https://docs.genius.com), which this
+gem makes use of.
 
 ## Installation
 
@@ -21,7 +21,19 @@ Gemfile:
 ## Usage
 
 __The best way to get a decent idea of the attributes available on `Song` and
-the other objects is by looking through the files in `lib/rapgenius`.__
+the other objects is by checking out the API documentation at:
+https://docs.genius.com
+
+### Authenticating
+
+You can create a client and grab an access token from
+http://genius.com/api-clients
+
+From there, you can also generate a client access token and use it like so:
+
+``` ruby
+RapGenius::Client.access_token = 'your-access-token'
+```
 
 ### Searching
 
@@ -70,7 +82,6 @@ song.pyongs
 song.description
 # => "Released in June 2013, not only did they take the beat from Soulja Boy’s OMG part 2 but they absolutely killed it."
 ```
-
 
 ### Lines
 
