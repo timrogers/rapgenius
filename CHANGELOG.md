@@ -40,3 +40,7 @@ __v1.0.4__ (8th November 2014)
 __v1.0.5__ (12th January 2015)
 
 * Load descriptions as plain text, reducing code for parsing them
+
+__v1.1.0__ (5th June 2015)
+
+* Authenticate using access tokens for the official [Genius API](https://docs.genius.com)

@@ -9,11 +9,7 @@ Gem::Specification.new do |s|
   s.authors     = ["Tim Rogers"]
   s.email       = ["me@timrogers.co.uk"]
   s.homepage    = "https://github.com/timrogers/rapgenius"
-  s.summary     = %q{A gem for accessing lyrics and explanations on RapGenius.com}
-  s.description = %q{Up until until now, to quote RapGenius themselves,
-    "working at Rap Genius is the API". With this magical gem using the
-    private API in the 'Genius' iOS app you can access the wealth of data on
-    the internet Talmud in Ruby.}
+  s.summary     = %q{A gem for accessing texts and explanations on Genius.com}
 
   s.add_runtime_dependency "httparty",    "~>0.11.0"
   s.add_development_dependency "rspec",   "~>2.14.1"

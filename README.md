@@ -1,4 +1,4 @@
-# rapgenius.rb
+# rapgenius
 
 ![Rap Genius logo](http://assets.rapgenius.com/images/apple-touch-icon.png?1432674944)
 
@@ -16,7 +16,9 @@ gem makes use of.
 Install the gem, and you're ready to go. Simply add the following to your
 Gemfile:
 
-`gem "rapgenius", "~> 1.0.5"`
+```ruby
+gem "rapgenius", "~> 1.1.0"
+```
 
 ## Usage
 
@@ -162,7 +164,7 @@ If you'd like to contribute anything else, go ahead or better still, make an iss
 
 ## Copyright
 
-Copyright (c) 2013-2014 Tim Rogers. See LICENSE for details.
+Copyright (c) 2013-2015 Tim Rogers. See LICENSE for details.
 
 ## Get in touch
 
