@@ -9,8 +9,10 @@ require 'rapgenius/exceptions'
 module RapGenius
   extend RapGenius::Client
 
-  def self.search(query, options={})
-    response = Client::HTTPClient.get("/search", query: {q: query}.merge(options))
+  def self.search(query, options = {})
+    response = fetch(build_api_url("/search"), { q: query }.merge(options))
+
+
 
     response["response"]["hits"].map do |song|
       result = song["result"]

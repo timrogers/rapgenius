@@ -21,7 +21,7 @@ module RapGenius
 
     def url=(url)
       unless url =~ /^https?:\/\//
-        @url = BASE_URL + url.gsub(/^\//, '')
+        @url = build_api_url(url)
       else
         @url = url
       end
@@ -31,23 +31,30 @@ module RapGenius
       @document ||= fetch(@url)
     end
 
-    def fetch(url)
+    def fetch(url, params = {})
       response = HTTPClient.get(url, query: {
         text_format: "#{DOM_TEXT_FORMAT},#{PLAIN_TEXT_FORMAT}"
-      }, headers: {
+      }.merge(params), headers: {
         'Authorization' => "Bearer #{RapGenius::Client.access_token}",
         'User-Agent' => "rapgenius.rb v#{RapGenius::VERSION}"
       })
 
-      if response.code != 200
-        if response.code == 404
-          raise RapGenius::NotFoundError
-        else
-          raise RapGenius::Error, "Received a #{response.code} HTTP response"
-        end
+      case response.code
+      when 404
+        raise RapGenius::NotFoundError
+      when 401
+        raise RapGenius::AuthenticationError
+      when 200
+        return response.parsed_response
+      else
+        raise RapGenius::Error, "Received a #{response.code} HTTP response"
       end
+    end
 
-      response.parsed_response
+    private
+
+    def build_api_url(path)
+      BASE_URL + path.gsub(/^\//, '')
     end
   end
 end

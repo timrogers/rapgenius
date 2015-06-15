@@ -3,6 +3,8 @@ module RapGenius
   end
 
   class NotFoundError < Error
+  end
 
+  class AuthenticationError < Error
   end
 end

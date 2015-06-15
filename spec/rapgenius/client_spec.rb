@@ -43,14 +43,25 @@ module RapGenius
     describe "#document" do
       before { client.url = "http://foo.bar" }
 
-      context "with a failed request" do
+      context "with a 404 response" do
         before do
           stub_request(:get, "http://foo.bar").with(query: { text_format: "dom,plain" }).
             to_return({body: '', status: 404})
         end
 
         it "raises a ScraperError" do
-          expect { client.document }.to raise_error(RapGenius::Error)
+          expect { client.document }.to raise_error(RapGenius::NotFoundError)
+        end
+      end
+
+      context "with an authentication failure" do
+        before do
+          stub_request(:get, "http://foo.bar").with(query: { text_format: "dom,plain" }).
+            to_return({body: '', status: 401})
+        end
+
+        it "raises a ScraperError" do
+          expect { client.document }.to raise_error(RapGenius::AuthenticationError)
         end
       end
     end
