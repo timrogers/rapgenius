@@ -7,35 +7,33 @@
 It's a Ruby gem for accessing songs, artists and annotations on
 [Genius](http://genius.com).
 
-In pre-1.0.0 versions, this gem used Nokogiri to scrape Genius' pages,
-but no more thanks to the new [Genius API](https://docs.genius.com), which this
-gem makes use of.
-
 ## Installation
 
 Install the gem, and you're ready to go. Simply add the following to your
 Gemfile:
 
 ```ruby
-gem "rapgenius", "~> 1.1.0"
+gem "rapgenius", "~> 1.1.1"
 ```
 
 ## Usage
 
-__The best way to get a decent idea of the attributes available on `Song` and
+The best way to get a decent idea of the attributes available on `Song` and
 the other objects is by checking out the API documentation at:
 https://docs.genius.com
 
 ### Authenticating
 
 You can create a client and grab an access token from
-http://genius.com/api-clients
+<http://genius.com/api-clients>.
 
 From there, you can also generate a client access token and use it like so:
 
 ``` ruby
 RapGenius::Client.access_token = 'your-access-token'
 ```
+
+You'll need to have set your token in order to be able to make requests.
 
 ### Searching
 
@@ -55,7 +53,7 @@ in the API.
 
 ### Songs
 
-Songs on Rap Genius have unique identifiers. They're not especially
+Songs on Genius have unique identifiers. They're not especially
 easy to find, but if you hover over the "pyong" button near the top of the page,
 you'll see the song's ID in the URL. Once you have an ID, you can load a
 song via the API:

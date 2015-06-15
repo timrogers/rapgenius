@@ -44,3 +44,9 @@ __v1.0.5__ (12th January 2015)
 __v1.1.0__ (5th June 2015)
 
 * Authenticate using access tokens for the official [Genius API](https://docs.genius.com)
+
+__v1.1.1__ (15th June 2015)
+
+* Raise a `RapGenius::MissingAccessTokenError` when making a request if no access token has been set
+* Handle authentication failures by raising a `RapGenius::AuthenticationError`
+* Fix search functionality (e.g. `RapGenius.search`) so that your access token is actually sent
