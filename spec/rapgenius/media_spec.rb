@@ -1,19 +1,10 @@
 require 'spec_helper'
 
-module RapGenius
-  describe Media do
+describe RapGenius::Media do
+  subject(:media) { described_class.new(type: "foo", url: "foo", provider: "foo") }
 
-    subject(:media) do
-      Media.new(
-        type: "foo",
-        url: "foo",
-        provider: "foo"
-      )
-    end
+  its(:type) { should eq "foo" }
+  its(:url) { should eq "foo" }
+  its(:provider) { should eq "foo" }
 
-    its(:type) { should eq "foo" }
-    its(:url) { should eq "foo" }
-    its(:provider) { should eq "foo" }
-
-  end
 end

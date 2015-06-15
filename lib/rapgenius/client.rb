@@ -32,6 +32,11 @@ module RapGenius
     end
 
     def fetch(url, params = {})
+      unless RapGenius::Client.access_token
+        raise MissingAccessTokenError, "You must specify an access token by setting " \
+                                       "RapGenius::Client.access_token"
+      end
+
       response = HTTPClient.get(url, query: {
         text_format: "#{DOM_TEXT_FORMAT},#{PLAIN_TEXT_FORMAT}"
       }.merge(params), headers: {

@@ -7,4 +7,7 @@ module RapGenius
 
   class AuthenticationError < Error
   end
+
+  class MissingAccessTokenError < Error
+  end
 end
