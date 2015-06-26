@@ -1,3 +1,7 @@
+warn "[rapgenius] The RapGenius gem is now deprecated in favour of the more powerful " \
+     "and more robust Genius gem. See https://github.com/timrogers/genius for more " \
+     "details."
+
 require 'rapgenius/version'
 require 'rapgenius/client'
 require 'rapgenius/line'
@@ -11,8 +15,6 @@ module RapGenius
 
   def self.search(query, options = {})
     response = fetch(build_api_url("/search"), { q: query }.merge(options))
-
-
 
     response["response"]["hits"].map do |song|
       result = song["result"]

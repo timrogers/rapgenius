@@ -32,6 +32,10 @@ module RapGenius
     end
 
     def fetch(url, params = {})
+      warn "[rapgenius] The RapGenius gem is now deprecated in favour of the more " \
+           "powerful and more robust Genius gem. See https://github.com/timrogers/" \
+           "genius for more details."
+
       unless RapGenius::Client.access_token
         raise MissingAccessTokenError, "You must specify an access token by setting " \
                                        "RapGenius::Client.access_token"
